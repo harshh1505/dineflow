@@ -64,7 +64,7 @@ Built for the modern dining experience:
 ## 📁 Project Structure
 
 ```
-qr-code/
+dineflow/
 ├── app/
 │   ├── (auth)/              # Login, Register, Forgot/Reset Password
 │   ├── actions/             # Server actions (auth, menu, tables, admin)
@@ -95,8 +95,8 @@ qr-code/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/harshh1505/qr-code.git
-cd qr-code
+git clone https://github.com/harshh1505/dineflow.git
+cd dineflow
 
 # 2. Install dependencies
 npm install
