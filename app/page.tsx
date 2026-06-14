@@ -19,7 +19,6 @@ import {
   PieChart,
   LineChart
 } from 'lucide-react';
-import { getUserSession } from '@/lib/auth';
 
 // Custom stroke-only restaurant doodles for organic visual layers
 const CoffeeCupDoodle = ({ className }: { className?: string }) => (
@@ -103,7 +102,6 @@ const BottomLeftCurves = ({ className }: { className?: string }) => (
 );
 
 export default async function LandingPage() {
-  const session = await getUserSession();
 
   return (
     <div className="flex flex-col min-h-screen bg-white text-[#111827] antialiased selection:bg-[#FF6B35] selection:text-white font-sans overflow-x-hidden relative">
@@ -125,36 +123,34 @@ export default async function LandingPage() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-md border-b border-[#EFEFEF] w-full transition-all duration-300">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center w-full">
-          <div className="flex items-center gap-2 group cursor-pointer">
-            <div className="bg-[#FF6B35] p-2 rounded-xl text-white transition-transform group-hover:scale-105 duration-300">
-              <ForkSpoonDoodle className="w-4 h-4 text-white" />
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 group cursor-pointer">
+              <div className="bg-[#FF6B35] p-2 rounded-xl text-white transition-transform group-hover:scale-105 duration-300">
+                <ForkSpoonDoodle className="w-4 h-4 text-white" />
+              </div>
+              <span className="font-extrabold text-lg tracking-tight text-[#111827]">
+                DineFlow
+              </span>
             </div>
-            <span className="font-extrabold text-lg tracking-tight text-[#111827]">
-              DineFlow
-            </span>
+            <div className="hidden min-[450px]:flex items-center self-center pl-3 border-l border-[#EFEFEF]">
+              <a 
+                href="https://techtrendgo.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[10px] text-slate-400 hover:text-[#FF6B35] font-semibold transition-colors leading-none"
+              >
+                an initiative by <span className="font-extrabold text-slate-500 hover:text-[#FF6B35]">tech trend go</span>
+              </a>
+            </div>
           </div>
           
-          <nav className="flex items-center gap-6">
-            {session ? (
-              <Link
-                href={session.role === 'SUPER_ADMIN' ? '/super-admin' : '/dashboard'}
-                className="bg-[#111827] hover:bg-[#FF6B35] text-white px-5 py-2.5 rounded-xl font-semibold text-xs transition-all duration-300 flex items-center gap-1.5 shadow-sm hover:shadow-md active:scale-98"
-              >
-                Dashboard <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
-            ) : (
-              <>
-                <Link href="/login" className="text-slate-500 hover:text-[#FF6B35] transition-colors text-xs font-semibold">
-                  Sign In
-                </Link>
-                <Link
-                  href="/register"
-                  className="bg-[#FF6B35] hover:bg-[#e05420] text-white px-5 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-98"
-                >
-                  Register Restaurant
-                </Link>
-              </>
-            )}
+          <nav className="flex items-center gap-5">
+            <Link
+              href="/enquire"
+              className="bg-[#FF6B35] hover:bg-[#e05420] text-white px-5 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-98"
+            >
+              Enquire Now
+            </Link>
           </nav>
         </div>
       </header>
@@ -177,13 +173,13 @@ export default async function LandingPage() {
 
               <div className="flex flex-col sm:flex-row gap-3 pt-1 items-center relative">
                 <Link
-                  href="/register"
+                  href="/enquire"
                   className="w-full sm:w-auto bg-[#FF6B35] hover:bg-[#e05420] text-white px-7 py-3.5 rounded-xl font-bold text-xs transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-98 flex items-center justify-center"
                 >
-                  Start Free Trial
+                  Enquire Now
                 </Link>
                 <Link
-                  href="/login"
+                  href="/live-demo"
                   className="w-full sm:w-auto bg-white hover:bg-[#FAFAFA] border border-[#111827]/10 hover:border-[#111827]/30 text-[#111827] px-7 py-3.5 rounded-xl font-bold text-xs transition-all duration-300 flex items-center justify-center"
                 >
                   View Demo
@@ -514,13 +510,13 @@ export default async function LandingPage() {
           <div className="border-t border-[#EFEFEF] mt-16 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10.5px] font-bold text-[#6B7280]">
             <div className="flex flex-wrap justify-center sm:justify-start items-center gap-x-8 gap-y-2">
               <div className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-[#FF6B35] stroke-[2.5]" /> No Setup Fee
+                <Check className="w-4 h-4 text-[#FF6B35] stroke-[2.5]" /> Minimal Setup Fee
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-[#FF6B35] stroke-[2.5]" /> Cancel Anytime
               </div>
               <div className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-[#FF6B35] stroke-[2.5]" /> 14-Day Free Trial
+                <Check className="w-4 h-4 text-[#FF6B35] stroke-[2.5]" /> 7-Day Free Trial
               </div>
             </div>
             
@@ -861,82 +857,83 @@ export default async function LandingPage() {
             <div className="text-center mb-16 space-y-2">
               <span className="text-[10px] font-extrabold text-[#FF6B35] bg-[#FFF7F2] px-3 py-1 rounded-full uppercase tracking-wider">Pricing</span>
               <h2 className="text-3xl font-extrabold text-[#111827] tracking-tight">Spacious, transparent pricing</h2>
-              <p className="text-[#6B7280] text-xs font-semibold">No setup fees. Switch plan tiers directly in the settings.</p>
+              <p className="text-[#6B7280] text-xs font-semibold">Choose a plan that fits your growth. Switch plan tiers directly in the settings.</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 items-stretch max-w-4xl mx-auto pt-2">
               
-              {/* Starter */}
+              {/* Pro Fixed */}
               <div className="bg-[#FFFFFF] border border-[#EFEFEF] rounded-2xl p-7 flex flex-col justify-between hover:border-slate-300 transition-colors shadow-[0_4px_20px_rgba(0,0,0,0.01)]">
                 <div>
-                  <span className="text-[9px] font-extrabold text-[#6B7280] uppercase tracking-wider bg-[#FAFAFA] border border-[#EFEFEF] px-2.5 py-0.5 rounded-lg">Starter</span>
-                  <div className="flex items-baseline gap-0.5 mt-4">
-                    <span className="text-4xl font-black text-[#111827]">$0</span>
-                    <span className="text-slate-500 text-xs font-semibold">/month</span>
+                  <span className="text-[9px] font-extrabold text-[#6B7280] uppercase tracking-wider bg-[#FAFAFA] border border-[#EFEFEF] px-2.5 py-0.5 rounded-lg">Pro Fixed</span>
+                  <div className="flex flex-col mt-4">
+                    <span className="text-3xl font-black text-[#111827]">₹10,000 + ₹25k</span>
+                    <span className="text-slate-500 text-[10px] font-semibold mt-1">per month + setup fee</span>
                   </div>
-                  <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">Perfect to digitize a single local food truck or drink bar.</p>
+                  <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">Ideal for established cafes and dining rooms looking for flat pricing.</p>
                   <ul className="mt-8 space-y-3.5 text-xs text-[#111827] font-semibold">
-                    <li className="flex items-center gap-2"><CheckIcon /> Up to 20 Menu Items</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> Up to 5 Dining Tables</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> Basic theme styling</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Up to 50 Dining Tables</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> ₹25,000 custom setup cost</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Zero monthly commissions</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Priority WhatsApp support</li>
                   </ul>
                 </div>
                 <Link
-                  href="/register"
+                  href="/enquire"
                   className="mt-8 w-full bg-[#FAFAFA] hover:bg-[#FFF7F2] text-[#111827] hover:text-[#FF6B35] border border-[#EFEFEF] hover:border-[#FF6B35]/30 py-3 rounded-xl font-bold text-center text-xs transition-colors"
                 >
-                  Get Started Free
+                  Enquire Now
                 </Link>
               </div>
 
-              {/* Growth */}
+              {/* Partner Share */}
               <div className="bg-[#FFFFFF] border-2 border-[#FF6B35] rounded-2xl p-7 flex flex-col justify-between relative shadow-[0_10px_30px_rgba(255,107,53,0.04)]">
                 <div className="absolute top-0 right-6 -translate-y-1/2 bg-[#FF6B35] text-white text-[9px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                   Popular
                 </div>
                 <div>
-                  <span className="text-[9px] font-extrabold text-[#FF6B35] uppercase tracking-wider bg-[#FFF7F2] px-2.5 py-0.5 rounded-lg">Growth</span>
-                  <div className="flex items-baseline gap-0.5 mt-4">
-                    <span className="text-4xl font-black text-[#111827]">$19</span>
-                    <span className="text-slate-500 text-xs font-semibold">/month</span>
+                  <span className="text-[9px] font-extrabold text-[#FF6B35] uppercase tracking-wider bg-[#FFF7F2] px-2.5 py-0.5 rounded-lg">Partner Share</span>
+                  <div className="flex flex-col mt-4">
+                    <span className="text-3xl font-black text-[#111827]">2% + ₹25k</span>
+                    <span className="text-slate-500 text-[10px] font-semibold mt-1">of monthly sales + setup fee</span>
                   </div>
-                  <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">Ideal for busy cafes and family dining rooms.</p>
+                  <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">Comes with unlimited dining tables and almost all premium features included.</p>
                   <ul className="mt-8 space-y-3.5 text-xs text-[#111827] font-semibold">
-                    <li className="flex items-center gap-2"><CheckIcon /> Unlimited Menu Items</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> Up to 25 Dining Tables</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> Brand color customization</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> 2 Manager accounts</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Unlimited Dining Tables</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> ₹25,000 custom setup cost</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> 2% revenue share commission</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Custom domain & premium style</li>
                   </ul>
                 </div>
                 <Link
-                  href="/register"
+                  href="/enquire"
                   className="mt-8 w-full bg-[#FF6B35] hover:bg-[#e05420] text-white py-3 rounded-xl font-bold text-center text-xs transition-colors shadow-2xs"
                 >
-                  Sign Up Now
+                  Enquire Now
                 </Link>
               </div>
 
-              {/* Premium */}
+              {/* Enterprise Suite */}
               <div className="bg-[#FFFFFF] border border-[#EFEFEF] rounded-2xl p-7 flex flex-col justify-between hover:border-slate-300 transition-colors shadow-[0_4px_20px_rgba(0,0,0,0.01)]">
                 <div>
-                  <span className="text-[9px] font-extrabold text-indigo-600 uppercase tracking-wider bg-indigo-50 border border-indigo-100 px-2.5 py-0.5 rounded-lg">Premium</span>
-                  <div className="flex items-baseline gap-0.5 mt-4">
-                    <span className="text-4xl font-black text-[#111827]">$49</span>
-                    <span className="text-slate-500 text-xs font-semibold">/month</span>
+                  <span className="text-[9px] font-extrabold text-indigo-600 uppercase tracking-wider bg-indigo-50 border border-indigo-100 px-2.5 py-0.5 rounded-lg">Enterprise Suite</span>
+                  <div className="flex flex-col mt-4">
+                    <span className="text-3xl font-black text-[#111827]">₹25,000 + ₹25k</span>
+                    <span className="text-slate-500 text-[10px] font-semibold mt-1">per month + setup fee</span>
                   </div>
                   <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">All-inclusive platform for hotels, chains, and large food courts.</p>
                   <ul className="mt-8 space-y-3.5 text-xs text-[#111827] font-semibold">
-                    <li className="flex items-center gap-2"><CheckIcon /> Unlimited Menu Items</li>
                     <li className="flex items-center gap-2"><CheckIcon /> Unlimited Dining Tables</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> Custom Logo Upload</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> Unlimited Managers</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> ₹25,000 custom setup cost</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Custom domain branding</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> POS & Payment APIs</li>
                   </ul>
                 </div>
                 <Link
-                  href="/register"
+                  href="/enquire"
                   className="mt-8 w-full bg-[#FAFAFA] hover:bg-[#FFF7F2] text-[#111827] hover:text-[#FF6B35] border border-[#EFEFEF] hover:border-[#FF6B35]/30 py-3 rounded-xl font-bold text-center text-xs transition-colors"
                 >
-                  Upgrade to Premium
+                  Enquire Now
                 </Link>
               </div>
 
@@ -957,7 +954,7 @@ export default async function LandingPage() {
                   <ForkSpoonDoodle className="w-4 h-4 text-white" />
                 </div>
                 <span className="font-extrabold text-base tracking-tight text-[#111827]">
-                  MenuQuick
+                  DineFlow
                 </span>
               </div>
               <p className="text-[#6B7280] text-[11px] leading-relaxed max-w-[240px] font-medium">
@@ -974,10 +971,10 @@ export default async function LandingPage() {
             <div className="space-y-3 col-span-1">
               <h4 className="text-[11px] font-extrabold text-[#111827] uppercase tracking-wider">Product</h4>
               <ul className="space-y-2 text-[11px] font-medium text-[#6B7280]">
-                <li><Link href="#features" className="hover:text-[#FF6B35] transition-colors">Features</Link></li>
-                <li><Link href="#pricing" className="hover:text-[#FF6B35] transition-colors">Pricing</Link></li>
-                <li><Link href="#how-it-works" className="hover:text-[#FF6B35] transition-colors">How it Works</Link></li>
-                <li><Link href="/login" className="hover:text-[#FF6B35] transition-colors">Live Demo</Link></li>
+                <li><Link href="/features" className="hover:text-[#FF6B35] transition-colors">Features</Link></li>
+                <li><Link href="/pricing" className="hover:text-[#FF6B35] transition-colors">Pricing</Link></li>
+                <li><Link href="/how-it-works" className="hover:text-[#FF6B35] transition-colors">How it Works</Link></li>
+                <li><Link href="/live-demo" className="hover:text-[#FF6B35] transition-colors">Live Demo</Link></li>
               </ul>
             </div>
 
@@ -985,10 +982,10 @@ export default async function LandingPage() {
             <div className="space-y-3 col-span-1">
               <h4 className="text-[11px] font-extrabold text-[#111827] uppercase tracking-wider">Company</h4>
               <ul className="space-y-2 text-[11px] font-medium text-[#6B7280]">
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">About Us</span></li>
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">Careers</span></li>
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">Press Kit</span></li>
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">Contact</span></li>
+                <li><Link href="/about-us" className="hover:text-[#FF6B35] transition-colors">About Us</Link></li>
+                <li><Link href="/careers" className="hover:text-[#FF6B35] transition-colors">Careers</Link></li>
+                <li><Link href="/press-kit" className="hover:text-[#FF6B35] transition-colors">Press Kit</Link></li>
+                <li><Link href="/contact" className="hover:text-[#FF6B35] transition-colors">Contact</Link></li>
               </ul>
             </div>
 
@@ -996,10 +993,10 @@ export default async function LandingPage() {
             <div className="space-y-3 col-span-1">
               <h4 className="text-[11px] font-extrabold text-[#111827] uppercase tracking-wider">Resources</h4>
               <ul className="space-y-2 text-[11px] font-medium text-[#6B7280]">
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">Help Center</span></li>
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">Guides</span></li>
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">API Status</span></li>
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">Blog</span></li>
+                <li><Link href="/help-center" className="hover:text-[#FF6B35] transition-colors">Help Center</Link></li>
+                <li><Link href="/guides" className="hover:text-[#FF6B35] transition-colors">Guides</Link></li>
+                <li><Link href="/api-status" className="hover:text-[#FF6B35] transition-colors">API Status</Link></li>
+                <li><Link href="/blog" className="hover:text-[#FF6B35] transition-colors">Blog</Link></li>
               </ul>
             </div>
 
@@ -1007,10 +1004,10 @@ export default async function LandingPage() {
             <div className="space-y-3 col-span-1">
               <h4 className="text-[11px] font-extrabold text-[#111827] uppercase tracking-wider">Legal</h4>
               <ul className="space-y-2 text-[11px] font-medium text-[#6B7280]">
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">Privacy Policy</span></li>
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">Terms of Service</span></li>
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">Security</span></li>
-                <li><span className="hover:text-[#FF6B35] cursor-pointer transition-colors">Compliance</span></li>
+                <li><Link href="/privacy-policy" className="hover:text-[#FF6B35] transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/terms-of-service" className="hover:text-[#FF6B35] transition-colors">Terms of Service</Link></li>
+                <li><Link href="/security" className="hover:text-[#FF6B35] transition-colors">Security</Link></li>
+                <li><Link href="/compliance" className="hover:text-[#FF6B35] transition-colors">Compliance</Link></li>
               </ul>
             </div>
 
@@ -1018,15 +1015,22 @@ export default async function LandingPage() {
 
           {/* Large Big Brand Name */}
           <div className="w-full text-center mt-20 pt-10 border-t border-[#EFEFEF] select-none">
-            <span className="text-[10vw] font-black tracking-tighter text-[#111827] uppercase leading-none opacity-[0.03] block hover:opacity-[0.05] transition-opacity duration-300">
-              MenuQuick
-            </span>
+            <div className="text-[10vw] font-black tracking-tighter text-[#111827] uppercase leading-none block">
+              {"DINEFLOW".split("").map((letter, index) => (
+                <span 
+                  key={index} 
+                  className="inline-block opacity-[0.06] hover:opacity-100 hover:text-[#FF6B35] transition-all duration-300 cursor-pointer"
+                >
+                  {letter}
+                </span>
+              ))}
+            </div>
           </div>
 
           {/* Copyright block */}
           <div className="flex flex-col sm:flex-row justify-between items-center mt-6 text-[10px] text-slate-400 font-semibold gap-2">
-            <p>&copy; {new Date().getFullYear()} MenuQuick SaaS Platform. All rights reserved.</p>
-            <p className="flex items-center gap-1">Built with care for restaurateurs everywhere.</p>
+            <p>&copy; {new Date().getFullYear()} Tech Trend Go. All rights reserved.</p>
+            <p className="flex items-center gap-1">Built with <span className="text-[#FF6B35]">♥</span> for restaurateurs everywhere.</p>
           </div>
           
         </div>

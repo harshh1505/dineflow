@@ -986,7 +986,7 @@ export default function CustomerMenuClient({
                         {/* Simulated QR */}
                         <div className="w-24 h-24 bg-white border border-[#EFEFEF] rounded-md p-1.5 flex items-center justify-center shadow-2xs">
                           <img
-                            src={`https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=upi://pay?pa=merchant@upi%26pn=MenuQuick%26am=${finalGrandTotal.toFixed(2)}`}
+                            src={`https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=upi://pay?pa=merchant@upi%26pn=DineFlow%26am=${finalGrandTotal.toFixed(2)}`}
                             alt="Payment QR Code"
                             className="w-full h-full object-contain"
                           />

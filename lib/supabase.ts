@@ -42,10 +42,37 @@ let subscriptions: any[] = [
   { id: 'sub-1', restaurant_id: 'restaurant-1', plan_type: 'GROWTH', status: 'ACTIVE' }
 ];
 
+let enquiries: any[] = [
+  {
+    id: 'enquiry-1',
+    restaurant_name: 'The Daily Brew',
+    website: 'https://dailybrew.com',
+    poc_name: 'Jane Smith',
+    whatsapp: '+919876543210',
+    requirements: 'Looking for a clean QR menu with multi-device ordering support for a busy cafe in downtown Mumbai.',
+    num_tables: 15,
+    poc_designation: 'General Manager',
+    created_at: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString()
+  },
+  {
+    id: 'enquiry-2',
+    restaurant_name: 'Spice Garden',
+    website: '',
+    poc_name: 'Rajesh Patel',
+    whatsapp: '+919999988888',
+    requirements: 'Interested in premium branding options, custom domain, and analytics features.',
+    num_tables: 40,
+    poc_designation: 'Owner',
+    created_at: new Date(Date.now() - 4 * 60 * 60 * 1000).toISOString()
+  }
+];
+
 class MockQueryBuilder {
   private table: string;
   private data: any[];
   private currentFilter: (item: any) => boolean = () => true;
+  private sortField: string | null = null;
+  private sortAscending: boolean = true;
 
   constructor(table: string) {
     this.table = table;
@@ -55,6 +82,7 @@ class MockQueryBuilder {
     else if (table === 'tables') this.data = tables;
     else if (table === 'users') this.data = users;
     else if (table === 'subscriptions') this.data = subscriptions;
+    else if (table === 'enquiries') this.data = enquiries;
     else this.data = [];
   }
 
@@ -87,6 +115,8 @@ class MockQueryBuilder {
   }
 
   order(field: string, options?: any) {
+    this.sortField = field;
+    this.sortAscending = options?.ascending !== false;
     return this;
   }
 
@@ -106,7 +136,16 @@ class MockQueryBuilder {
   }
 
   async then(resolve: any) {
-    const filtered = this.data.filter(this.currentFilter);
+    let filtered = [...this.data.filter(this.currentFilter)];
+    if (this.sortField) {
+      filtered.sort((a, b) => {
+        const valA = a[this.sortField!];
+        const valB = b[this.sortField!];
+        if (valA < valB) return this.sortAscending ? -1 : 1;
+        if (valA > valB) return this.sortAscending ? 1 : -1;
+        return 0;
+      });
+    }
     return resolve({ data: filtered });
   }
 
@@ -117,6 +156,7 @@ class MockQueryBuilder {
     else if (this.table === 'tables') tables.push(newRecord);
     else if (this.table === 'restaurants') restaurants.push(newRecord);
     else if (this.table === 'users') users.push(newRecord);
+    else if (this.table === 'enquiries') enquiries.push(newRecord);
     
     return {
       select: () => {

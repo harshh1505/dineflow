@@ -1,17 +1,17 @@
-# MenuQuick 🍽️
+# DineFlow 🍽️
 
 > **The modern QR menu platform for restaurants** — scan, browse, and order without the friction.
 
-![MenuQuick Banner](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
+![DineFlow Banner](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?style=for-the-badge&logo=tailwindcss)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
-## ✨ What is MenuQuick?
+## ✨ What is DineFlow?
 
-MenuQuick is a **restaurant growth platform** that replaces physical menus with a beautiful, scannable digital experience. Restaurants get a branded QR code for every table — customers scan and instantly browse a fast, mobile-first menu.
+DineFlow is a **restaurant growth platform** that replaces physical menus with a beautiful, scannable digital experience. Restaurants get a branded QR code for every table — customers scan and instantly browse a fast, mobile-first menu.
 
 Built for the modern dining experience:
 - 📱 **Customers** scan a QR code → see the full menu instantly
@@ -143,7 +143,7 @@ SUPABASE_ANON_KEY=""
 
 ## 🎨 Design System
 
-MenuQuick uses a warm, premium colour palette inspired by Stripe, Linear, and Zomato:
+DineFlow uses a warm, premium colour palette inspired by Stripe, Linear, and Zomato:
 
 | Token | Value | Use |
 |---|---|---|

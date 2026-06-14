@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MenuQuick | Restaurant QR Menu SaaS Platform",
+  title: "DineFlow | Restaurant QR Menu SaaS Platform",
   description: "Create and publish interactive, mobile-optimized digital QR menus for restaurants. Track analytics, manage tables, and customize branding in seconds.",
 };
 
