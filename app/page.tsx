@@ -132,7 +132,7 @@ export default async function LandingPage() {
                 DineFlow
               </span>
             </div>
-            <div className="hidden min-[450px]:flex items-center self-center pl-3 border-l border-[#EFEFEF]">
+            <div className="flex items-center self-center pl-2 sm:pl-3 border-l border-[#EFEFEF]">
               <a 
                 href="https://techtrendgo.com" 
                 target="_blank" 
