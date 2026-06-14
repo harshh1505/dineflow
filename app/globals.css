@@ -1,26 +1,142 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Design Tokens from User Specs */
+  --background: #FFFFFF;
+  --foreground: #111827;
+  
+  --card: #FFFFFF;
+  --card-foreground: #111827;
+  
+  --primary: #FF6B35; /* Orange brand primary */
+  --primary-foreground: #FFFFFF;
+  
+  --secondary: #FFF7F2; /* Secondary soft orange/peach */
+  --secondary-foreground: #FF6B35;
+  
+  --muted: #FAFAFA; /* Surface */
+  --muted-foreground: #6B7280;
+  
+  --accent: #FFF7F2;
+  --accent-foreground: #FF6B35;
+  
+  --border: #EFEFEF; /* Border */
+  --input: #EFEFEF;
+  --ring: #FF6B35;
+  
+  --radius: 12px; /* Premium smooth radius */
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Inter, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Clear excessive dashboard scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle motion transitions matching Stripe/Notion specs */
+.transition-card {
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.hover-row:hover {
+  background-color: #FAFAFA;
+}
+
+/* Elegant bottom-sheet entrance anim */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Form inputs styling */
+input:focus, select:focus, textarea:focus {
+  border-color: #FF6B35 !important;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.1);
+}
+
+/* Custom Dotted Grid */
+.bg-dot-grid {
+  background-image: radial-gradient(circle, #EFEFEF 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* Custom Floating Animations for Organic Feel */
+@keyframes float-y {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes float-y-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes float-y-rotate {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+}
+
+.animate-float-y {
+  animation: float-y 4s ease-in-out infinite;
+}
+
+.animate-float-y-slow {
+  animation: float-y-slow 6s ease-in-out infinite;
+}
+
+.animate-float-y-rotate {
+  animation: float-y-rotate 5s ease-in-out infinite;
 }
