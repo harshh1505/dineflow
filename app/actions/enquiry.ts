@@ -1,6 +1,6 @@
 'use server';
 
-import { supabase } from '@/lib/supabase';
+import { supabase } from '@/lib/supabase/client';
 import { revalidatePath } from 'next/cache';
 
 export async function submitEnquiry(prevState: any, formData: FormData) {
@@ -24,30 +24,36 @@ export async function submitEnquiry(prevState: any, formData: FormData) {
   }
 
   try {
-    const { data, error } = await supabase
-      .from('enquiries')
-      .insert({
-        restaurant_name: restaurantName,
-        website: website || '',
-        poc_name: pocName,
-        whatsapp,
-        requirements: requirements || '',
-        num_tables: numTables,
-        poc_designation: pocDesignation,
-        demo_date: demoDate,
-        demo_time: demoTime,
-        created_at: new Date().toISOString()
-      })
-      .select()
-      .single();
+    console.log("Submitting enquiry", formData);
 
-    if (error || !data) {
-      console.error('Error creating enquiry:', error);
+    const { data, error } = await supabase
+      .from("enquiries")
+      .insert([
+        {
+          restaurant_name: restaurantName,
+          website: website || null,
+          poc_name: pocName,
+          poc_designation: pocDesignation,
+          whatsapp: whatsapp,
+          num_tables: numTables,
+          requirements: requirements || null,
+          demo_date: demoDate || null,
+          demo_time: demoTime || null
+        }
+      ]);
+
+    if (error) {
+      console.error("Supabase insert error:", error);
       return { error: 'Failed to submit enquiry. Please try again.' };
     }
 
+    console.log("Inserted enquiry:", data);
+
     revalidatePath('/');
-    return { success: true };
+    return {
+      success: true,
+      message: "Enquiry submitted successfully"
+    };
   } catch (error: any) {
     console.error('Enquiry submittal error:', error);
     return { error: 'Something went wrong during submission.' };
