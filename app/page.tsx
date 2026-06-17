@@ -867,15 +867,16 @@ export default async function LandingPage() {
                 <div>
                   <span className="text-[9px] font-extrabold text-[#6B7280] uppercase tracking-wider bg-[#FAFAFA] border border-[#EFEFEF] px-2.5 py-0.5 rounded-lg">Pro Fixed</span>
                   <div className="flex flex-col mt-4">
-                    <span className="text-3xl font-black text-[#111827]">₹500 + ₹25k</span>
+                    <span className="text-3xl font-black text-[#111827]">₹1,000 + ₹25k</span>
                     <span className="text-slate-500 text-[10px] font-semibold mt-1">per month + setup fee</span>
                   </div>
                   <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">Ideal for established cafes and dining rooms looking for flat pricing.</p>
                   <ul className="mt-8 space-y-3.5 text-xs text-[#111827] font-semibold">
-                    <li className="flex items-center gap-2"><CheckIcon /> Up to 50 Dining Tables</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> ₹25,000 custom setup cost</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> Zero monthly commissions</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> Priority WhatsApp support</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Up to 100 orders/day</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Contactless QR Ordering</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Basic Kitchen Display (KDS)</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Zero-Wait UPI Payments</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Email Support</li>
                   </ul>
                 </div>
                 <Link
@@ -899,10 +900,13 @@ export default async function LandingPage() {
                   </div>
                   <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">Comes with unlimited dining tables and almost all premium features included.</p>
                   <ul className="mt-8 space-y-3.5 text-xs text-[#111827] font-semibold">
-                    <li className="flex items-center gap-2"><CheckIcon /> Unlimited Dining Tables</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> ₹25,000 custom setup cost</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> 2% revenue share commission</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> Custom domain & premium style</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Unlimited Orders</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Advanced QR Branding</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Smart Station Routing KDS</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Frictionless OTP Login</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Conversational AI Waiter</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Semantic Taste Recommendations</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Priority WhatsApp Support</li>
                   </ul>
                 </div>
                 <Link
@@ -918,15 +922,18 @@ export default async function LandingPage() {
                 <div>
                   <span className="text-[9px] font-extrabold text-indigo-600 uppercase tracking-wider bg-indigo-50 border border-indigo-100 px-2.5 py-0.5 rounded-lg">Enterprise Suite</span>
                   <div className="flex flex-col mt-4">
-                    <span className="text-3xl font-black text-[#111827]">₹1,000 + ₹25k</span>
+                    <span className="text-3xl font-black text-[#111827]">₹2,000 + ₹25k</span>
                     <span className="text-slate-500 text-[10px] font-semibold mt-1">per month + setup fee</span>
                   </div>
                   <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">All-inclusive platform for hotels, chains, and large food courts.</p>
                   <ul className="mt-8 space-y-3.5 text-xs text-[#111827] font-semibold">
-                    <li className="flex items-center gap-2"><CheckIcon /> Unlimited Dining Tables</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> ₹25,000 custom setup cost</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> Custom domain branding</li>
-                    <li className="flex items-center gap-2"><CheckIcon /> POS & Payment APIs</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Everything in Partner Share</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Multi-location Dashboard</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Centralized Cloud Kitchen</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Predictive AI Inventory</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> 24/7 Dedicated Account Manager</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Custom API Integrations</li>
+                    <li className="flex items-center gap-2"><CheckIcon /> Custom Analytics Reports</li>
                   </ul>
                 </div>
                 <Link
