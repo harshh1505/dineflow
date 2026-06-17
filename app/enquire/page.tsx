@@ -176,9 +176,9 @@ export default function EnquirePage() {
                       <input
                         id="website"
                         name="website"
-                        type="url"
+                        type="text"
                         className="block w-full pl-9 pr-3 py-2 bg-white border border-[#EAEAEA] rounded-lg text-[#111827] placeholder-slate-400 text-xs transition-colors focus:border-[#FF6B35]/50 focus:outline-none"
-                        placeholder="https://myrestaurant.com"
+                        placeholder="myrestaurant.com"
                       />
                     </div>
                   </div>
