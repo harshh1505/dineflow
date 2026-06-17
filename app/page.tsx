@@ -867,7 +867,7 @@ export default async function LandingPage() {
                 <div>
                   <span className="text-[9px] font-extrabold text-[#6B7280] uppercase tracking-wider bg-[#FAFAFA] border border-[#EFEFEF] px-2.5 py-0.5 rounded-lg">Pro Fixed</span>
                   <div className="flex flex-col mt-4">
-                    <span className="text-3xl font-black text-[#111827]">₹10,000 + ₹25k</span>
+                    <span className="text-3xl font-black text-[#111827]">₹500 + ₹25k</span>
                     <span className="text-slate-500 text-[10px] font-semibold mt-1">per month + setup fee</span>
                   </div>
                   <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">Ideal for established cafes and dining rooms looking for flat pricing.</p>
@@ -918,7 +918,7 @@ export default async function LandingPage() {
                 <div>
                   <span className="text-[9px] font-extrabold text-indigo-600 uppercase tracking-wider bg-indigo-50 border border-indigo-100 px-2.5 py-0.5 rounded-lg">Enterprise Suite</span>
                   <div className="flex flex-col mt-4">
-                    <span className="text-3xl font-black text-[#111827]">₹25,000 + ₹25k</span>
+                    <span className="text-3xl font-black text-[#111827]">₹1,000 + ₹25k</span>
                     <span className="text-slate-500 text-[10px] font-semibold mt-1">per month + setup fee</span>
                   </div>
                   <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">All-inclusive platform for hotels, chains, and large food courts.</p>

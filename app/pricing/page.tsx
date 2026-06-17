@@ -7,7 +7,7 @@ export default function PricingPage() {
     {
       plan: 'Pro Fixed',
       badge: null,
-      price: '₹10,000 + ₹25,000',
+      price: '₹500 + ₹25,000',
       period: 'per month + one-time setup fee',
       desc: 'Ideal for growing family dining rooms and busy local cafes looking for predictable, fixed monthly billing with zero revenue commissions.',
       color: 'border-[#EFEFEF] bg-[#FAFAFA]/50',
@@ -53,7 +53,7 @@ export default function PricingPage() {
     {
       plan: 'Enterprise Suite',
       badge: 'Full Suite',
-      price: '₹25,000 + ₹25,000',
+      price: '₹1,000 + ₹25,000',
       period: 'per month + one-time setup fee',
       desc: 'Designed for large multi-floor cafes, upscale hotels, and restaurant groups needing custom brand integrations, POS endpoints, and unlimited tables.',
       color: 'border-[#EFEFEF] bg-[#FAFAFA]/50',

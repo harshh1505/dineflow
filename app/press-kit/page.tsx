@@ -12,7 +12,7 @@ export default function PressKitPage() {
     { label: 'Product Type', value: 'SaaS (Software as a Service) — B2B, sold per restaurant' },
     { label: 'Markets Served', value: 'India (primary), UAE & Singapore (expanding)' },
     { label: 'Current Stage', value: 'Seed-stage, actively onboarding restaurant partners' },
-    { label: 'Pricing Model', value: '₹25,000 setup fee + Pro Fixed (₹10,000/mo) / Partner Share (2%) / Enterprise Suite (₹25,000/mo)' },
+    { label: 'Pricing Model', value: '₹25,000 setup fee + Pro Fixed (₹500/mo) / Partner Share (2%) / Enterprise Suite (₹1,000/mo)' },
     { label: 'Revenue Model', value: 'Hybrid flat rate and revenue-share options — zero monthly commissions on fixed tiers' },
   ];
 
