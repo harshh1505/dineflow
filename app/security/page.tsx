@@ -78,7 +78,7 @@ export default function SecurityPage() {
         'Responsible disclosure policy in place',
         '48-hour acknowledgment SLA for reported issues',
         'Critical patches deployed within 5 business days',
-        'Contact: security@dineflow.in for reports'
+        'Contact: security@restreasy.in for reports'
       ]
     },
     {
@@ -117,10 +117,10 @@ export default function SecurityPage() {
         <div className="space-y-3">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Our Security Commitment</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            Security is a foundational requirement, not an optional feature. DineFlow is designed from the ground up with security as a core architectural constraint — not bolted on after the fact. We apply defense-in-depth principles across all layers: network transmission, database storage, access control, and application logic.
+            Security is a foundational requirement, not an optional feature. Restreasy is designed from the ground up with security as a core architectural constraint — not bolted on after the fact. We apply defense-in-depth principles across all layers: network transmission, database storage, access control, and application logic.
           </p>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            This page provides a transparent overview of the security measures we have implemented. If you are a security researcher, an enterprise customer evaluating DineFlow, or a restaurant owner with specific concerns, the information below and our contact channel is available to you.
+            This page provides a transparent overview of the security measures we have implemented. If you are a security researcher, an enterprise customer evaluating Restreasy, or a restaurant owner with specific concerns, the information below and our contact channel is available to you.
           </p>
         </div>
 
@@ -165,14 +165,14 @@ export default function SecurityPage() {
         <div className="border-t border-[#EFEFEF] pt-8 space-y-4">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Report a Security Issue</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed max-w-lg">
-            If you have discovered a potential security vulnerability in DineFlow's systems, please contact our security team immediately. We take all reports seriously and commit to acknowledging your report within 48 hours.
+            If you have discovered a potential security vulnerability in Restreasy's systems, please contact our security team immediately. We take all reports seriously and commit to acknowledging your report within 48 hours.
           </p>
           <div className="border border-[#EFEFEF] rounded-2xl p-5 bg-white space-y-3">
             <div className="flex items-center gap-3 text-xs">
               <Mail className="w-4 h-4 text-indigo-600 shrink-0" />
               <div>
                 <p className="font-black text-[#111827]">Security Team Contact</p>
-                <a href="mailto:security@dineflow.in" className="text-indigo-600 font-bold hover:underline">security@dineflow.in</a>
+                <a href="mailto:security@restreasy.in" className="text-indigo-600 font-bold hover:underline">security@restreasy.in</a>
               </div>
             </div>
             <p className="text-[10px] text-slate-400 font-semibold border-t border-[#EFEFEF] pt-3">

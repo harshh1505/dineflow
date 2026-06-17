@@ -7,7 +7,7 @@ export default function PricingPage() {
     {
       plan: 'Pro Fixed',
       badge: null,
-      price: '₹1,000 + ₹25,000',
+      price: '₹999 + ₹15,000',
       period: 'per month + one-time setup fee',
       desc: 'Ideal for growing family dining rooms and busy local cafes looking for predictable, fixed monthly billing with zero revenue commissions.',
       color: 'border-[#EFEFEF] bg-[#FAFAFA]/50',
@@ -23,9 +23,9 @@ export default function PricingPage() {
     {
       plan: 'Partner Share',
       badge: 'Most Popular',
-      price: '2% + ₹25,000',
-      period: 'of monthly revenue + one-time setup fee',
-      desc: 'Our flagship option. ₹25,000 setup fee, then only pay 2% of digital revenue monthly. Comes with unlimited tables and almost all premium features.',
+      price: '₹2,999 + ₹25,000',
+      period: 'per month + one-time setup fee',
+      desc: 'Our flagship option. ₹25,000 setup fee, then only pay ₹2,999 monthly. Comes with unlimited tables and almost all premium features.',
       color: 'border-[#FF6B35] bg-white shadow-lg relative',
       btnColor: 'bg-[#FF6B35] text-white hover:bg-[#e05420]',
       features: [
@@ -41,8 +41,8 @@ export default function PricingPage() {
     {
       plan: 'Enterprise Suite',
       badge: 'Full Suite',
-      price: '₹2,000 + ₹25,000',
-      period: 'per month + one-time setup fee',
+      price: 'Custom Pricing',
+      period: 'tailored quote based on requirements',
       desc: 'Designed for large multi-floor cafes, upscale hotels, and restaurant groups needing custom brand integrations, POS endpoints, and unlimited tables.',
       color: 'border-[#EFEFEF] bg-[#FAFAFA]/50',
       btnColor: 'bg-white text-slate-700 border border-[#EFEFEF] hover:bg-[#FFF7F2] hover:text-[#FF6B35]',
@@ -68,8 +68,8 @@ export default function PricingPage() {
       a: 'Yes. You can upgrade, downgrade, or cancel your active subscription tier at any time directly through the merchant billing dashboard settings. Upgrades take effect immediately. Downgrades apply at the end of your current billing cycle.'
     },
     {
-      q: 'Do you charge commission on orders placed through DineFlow?',
-      a: 'Never. DineFlow charges a flat monthly subscription fee only. We do not take any percentage of orders, sales, or revenue. 100% of your revenue belongs to your restaurant, as it should be.'
+      q: 'Do you charge commission on orders placed through Restreasy?',
+      a: 'Never. Restreasy charges a flat monthly subscription fee only. We do not take any percentage of orders, sales, or revenue. 100% of your revenue belongs to your restaurant, as it should be.'
     },
     {
       q: 'Is the Starter plan really free forever?',
@@ -95,8 +95,8 @@ export default function PricingPage() {
 
   const addons = [
     { name: 'Additional Table Pack', price: '₹199 / 5 tables / month', desc: 'For Growth plan users who need slightly more tables without upgrading to Premium.' },
-    { name: 'Custom Domain Branding', price: '₹499 / month', desc: 'Serve your menu on a custom domain like menu.yourrestaurant.com instead of the default DineFlow subdomain.' },
-    { name: 'Menu Design Service', price: '₹2,999 one-time', desc: 'Our in-house design team will professionally photograph and format your full menu — item images, descriptions, and layout — into your DineFlow profile.' },
+    { name: 'Custom Domain Branding', price: '₹499 / month', desc: 'Serve your menu on a custom domain like menu.yourrestaurant.com instead of the default Restreasy subdomain.' },
+    { name: 'Menu Design Service', price: '₹2,999 one-time', desc: 'Our in-house design team will professionally photograph and format your full menu — item images, descriptions, and layout — into your Restreasy profile.' },
     { name: 'WhatsApp Order Notifications', price: '₹299 / month', desc: 'Automatically forward new table orders to a WhatsApp number for your kitchen or manager on duty.' },
   ];
 

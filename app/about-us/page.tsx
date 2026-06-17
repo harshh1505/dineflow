@@ -54,8 +54,8 @@ export default function AboutUsPage() {
     },
     {
       year: '2026',
-      title: 'DineFlow SaaS Platform',
-      desc: 'We rebranded and launched as DineFlow, opening up our platform to any restaurant or cafe that wants to digitize their table ordering experience. Our current waitlist spans hundreds of enquiries across 12+ cities in India and UAE.'
+      title: 'Restreasy SaaS Platform',
+      desc: 'We rebranded and launched as Restreasy, opening up our platform to any restaurant or cafe that wants to digitize their table ordering experience. Our current waitlist spans hundreds of enquiries across 12+ cities in India and UAE.'
     }
   ];
 
@@ -91,7 +91,7 @@ export default function AboutUsPage() {
 
   return (
     <InfoLayout
-      title="About DineFlow"
+      title="About Restreasy"
       subtitle="Empowering hospitality businesses with clean, elegant, and frictionless digital table ordering tools."
       category="Our Profile"
       icon={BookOpen}
@@ -103,7 +103,7 @@ export default function AboutUsPage() {
         <div className="space-y-4">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Our Core Vision</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            At DineFlow, we believe dining should be an effortless experience — for both the guest and the team behind the kitchen. Restaurants face increasing pressures from printing costs, menu item price adjustments, peak-hour staffing constraints, and the growing expectation for tech-enabled dining. Our goal is to supply every cafe and restaurant with their own fast, standalone QR menu and ordering system, enabling them to delight customers without relying on bloated marketplace applications or expensive tablet hardware.
+            At Restreasy, we believe dining should be an effortless experience — for both the guest and the team behind the kitchen. Restaurants face increasing pressures from printing costs, menu item price adjustments, peak-hour staffing constraints, and the growing expectation for tech-enabled dining. Our goal is to supply every cafe and restaurant with their own fast, standalone QR menu and ordering system, enabling them to delight customers without relying on bloated marketplace applications or expensive tablet hardware.
           </p>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
             By shifting from static paper booklets to interactive web interfaces, restaurants can instantly update menu pricing, indicate item availability, gather customer feedback, and monitor live order inflows — without printing a single sheet of paper. We exist so that a two-person cafe owner in Mysore has access to the same quality of digital ordering infrastructure that a five-star hotel chain uses.
@@ -160,7 +160,7 @@ export default function AboutUsPage() {
 
         {/* Team */}
         <div className="border-t border-[#EFEFEF] pt-8 space-y-5">
-          <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">The Team Behind DineFlow</h2>
+          <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">The Team Behind Restreasy</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
             We are a compact, distributed team combining experience in product development, hospitality operations, and design. Every member has spent time in real restaurant environments to understand the problem we are solving.
           </p>
@@ -203,7 +203,7 @@ export default function AboutUsPage() {
         <div className="border-t border-[#EFEFEF] pt-8 text-center space-y-4">
           <h3 className="font-black text-slate-800 text-sm">Want to learn more about our story?</h3>
           <p className="text-slate-500 font-semibold text-xs max-w-md mx-auto leading-relaxed">
-            Reach out to our team directly via the contact form or submit a restaurant enquiry to see DineFlow in action at your venue.
+            Reach out to our team directly via the contact form or submit a restaurant enquiry to see Restreasy in action at your venue.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/contact" className="inline-block bg-[#FF6B35] hover:bg-[#e05420] text-white font-bold px-8 py-3 rounded-xl text-xs transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">

@@ -30,7 +30,7 @@ export default function InfoLayout({
                 <QrCode className="w-4 h-4 text-white" />
               </div>
               <span className="font-extrabold text-lg tracking-tight text-[#111827]">
-                DineFlow
+                Restreasy
               </span>
             </Link>
             <div className="flex items-center self-center pl-2 sm:pl-3 border-l border-[#EFEFEF]">

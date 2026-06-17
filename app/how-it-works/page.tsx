@@ -45,7 +45,7 @@ export default function HowItWorksPage() {
       title: 'Define Tables and Export QR Code Sheets',
       subtitle: 'Give each dining table its own digital connection.',
       time: '~15 minutes',
-      desc: 'Navigate to the Table Management screen. Input the list of tables at your physical venue (e.g., Table 1, Table 2, Patio 1, Bar Seating A). DineFlow automatically generates individual table-specific QR codes. These codes are not generic — they are permanently mapped to each table ID, so your kitchen always knows exactly which table placed an order. Download the printable A4 PDF sheets and place the codes on acrylic stands, card holders, or table surfaces.',
+      desc: 'Navigate to the Table Management screen. Input the list of tables at your physical venue (e.g., Table 1, Table 2, Patio 1, Bar Seating A). Restreasy automatically generates individual table-specific QR codes. These codes are not generic — they are permanently mapped to each table ID, so your kitchen always knows exactly which table placed an order. Download the printable A4 PDF sheets and place the codes on acrylic stands, card holders, or table surfaces.',
       substeps: [
         'Add all tables by name or number (e.g. Table 1, Table 2, Patio Seat A)',
         'System auto-generates a unique QR code per table',

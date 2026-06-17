@@ -1,17 +1,17 @@
-# DineFlow 🍽️
+# Restreasy 🍽️
 
 > **The modern QR menu platform for restaurants** — scan, browse, and order without the friction.
 
-![DineFlow Banner](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
+![Restreasy Banner](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?style=for-the-badge&logo=tailwindcss)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
-## ✨ What is DineFlow?
+## ✨ What is Restreasy?
 
-DineFlow is a **restaurant growth platform** that replaces physical menus with a beautiful, scannable digital experience. Restaurants get a branded QR code for every table — customers scan and instantly browse a fast, mobile-first menu.
+Restreasy is a **restaurant growth platform** that replaces physical menus with a beautiful, scannable digital experience. Restaurants get a branded QR code for every table — customers scan and instantly browse a fast, mobile-first menu.
 
 Built for the modern dining experience:
 - 📱 **Customers** scan a QR code → see the full menu instantly
@@ -64,7 +64,7 @@ Built for the modern dining experience:
 ## 📁 Project Structure
 
 ```
-dineflow/
+restreasy/
 ├── app/
 │   ├── (auth)/              # Login, Register, Forgot/Reset Password
 │   ├── actions/             # Server actions (auth, menu, tables, admin)
@@ -95,8 +95,8 @@ dineflow/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/harshh1505/dineflow.git
-cd dineflow
+git clone https://github.com/harshh1505/restreasy.git
+cd restreasy
 
 # 2. Install dependencies
 npm install
@@ -143,7 +143,7 @@ SUPABASE_ANON_KEY=""
 
 ## 🎨 Design System
 
-DineFlow uses a warm, premium colour palette inspired by Stripe, Linear, and Zomato:
+Restreasy uses a warm, premium colour palette inspired by Stripe, Linear, and Zomato:
 
 | Token | Value | Use |
 |---|---|---|

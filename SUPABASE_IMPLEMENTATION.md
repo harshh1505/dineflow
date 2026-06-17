@@ -1,12 +1,12 @@
-# DineFlow → Supabase Backend Integration Documentation
+# Restreasy → Supabase Backend Integration Documentation
 
-This document describes the architectural layout, database models, storage organization, Row-Level Security (RLS) configuration, local setup, and migration checklist to transition the DineFlow frontend prototype to a live, production-ready Supabase backend.
+This document describes the architectural layout, database models, storage organization, Row-Level Security (RLS) configuration, local setup, and migration checklist to transition the Restreasy frontend prototype to a live, production-ready Supabase backend.
 
 ---
 
 ## 1. Architecture Overview
 
-DineFlow uses a hybrid Next.js 16 App Router architecture paired with Supabase:
+Restreasy uses a hybrid Next.js 16 App Router architecture paired with Supabase:
 *   **Frontend**: Next.js 16 server-rendered pages and interactive React client components styled using Tailwind CSS v4.
 *   **State**: Zustand stores handle non-persistent guest interface states (cart, filters, mobile UI drawers).
 *   **Backend & DB**: PostgreSQL hosted on Supabase, accessed securely via standard queries and RLS policies.

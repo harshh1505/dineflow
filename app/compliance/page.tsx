@@ -10,7 +10,7 @@ export default function CompliancePage() {
       jurisdiction: 'European Union — applicable to all EU-resident users',
       status: 'Aligned',
       statusColor: 'text-emerald-600 bg-emerald-50 border-emerald-100',
-      desc: 'Although DineFlow primarily serves Indian restaurants, we implement GDPR-aligned practices across all our data handling operations. Our guest QR menu interface collects zero PII from diners — no email, name, or phone is required to browse or order, which means the majority of our guest-facing interactions fall entirely outside GDPR\'s scope. For merchant accounts where EU-based individuals may submit enquiries, we process their data lawfully under the "legitimate interest" and "contractual necessity" bases.',
+      desc: 'Although Restreasy primarily serves Indian restaurants, we implement GDPR-aligned practices across all our data handling operations. Our guest QR menu interface collects zero PII from diners — no email, name, or phone is required to browse or order, which means the majority of our guest-facing interactions fall entirely outside GDPR\'s scope. For merchant accounts where EU-based individuals may submit enquiries, we process their data lawfully under the "legitimate interest" and "contractual necessity" bases.',
       points: [
         'Zero PII collected from dining guests at the menu level',
         'Merchant data processed under contractual necessity basis',
@@ -27,7 +27,7 @@ export default function CompliancePage() {
       jurisdiction: 'Republic of India — primary regulatory framework',
       status: 'Compliant',
       statusColor: 'text-emerald-600 bg-emerald-50 border-emerald-100',
-      desc: 'DineFlow complies with the Information Technology Act, 2000 and its associated rules, and has aligned our data practices with India\'s Digital Personal Data Protection (DPDP) Act, 2023. All Indian restaurant account data is processed and stored within India. We maintain a legally registered entity in India (DineFlow Technologies Pvt. Ltd.) and appoint a Data Protection Officer (DPO) as required under applicable regulations.',
+      desc: 'Restreasy complies with the Information Technology Act, 2000 and its associated rules, and has aligned our data practices with India\'s Digital Personal Data Protection (DPDP) Act, 2023. All Indian restaurant account data is processed and stored within India. We maintain a legally registered entity in India (Restreasy Technologies Pvt. Ltd.) and appoint a Data Protection Officer (DPO) as required under applicable regulations.',
       points: [
         'All Indian merchant data stored within India (GCP Mumbai)',
         'Registered as an Indian company under Companies Act',
@@ -44,10 +44,10 @@ export default function CompliancePage() {
       jurisdiction: 'International — applicable to payment data handling',
       status: 'Scoped Out',
       statusColor: 'text-blue-600 bg-blue-50 border-blue-100',
-      desc: 'DineFlow is a menu presentation and ordering platform. We do not process, store, or transmit payment card data. Our system submits orders to the merchant dashboard — billing is handled offline at the restaurant\'s existing cash/card counter. This design means DineFlow is entirely out-of-scope for PCI-DSS compliance obligations. Merchants using third-party payment integrations connect their own PCI-DSS compliant payment processors independently.',
+      desc: 'Restreasy is a menu presentation and ordering platform. We do not process, store, or transmit payment card data. Our system submits orders to the merchant dashboard — billing is handled offline at the restaurant\'s existing cash/card counter. This design means Restreasy is entirely out-of-scope for PCI-DSS compliance obligations. Merchants using third-party payment integrations connect their own PCI-DSS compliant payment processors independently.',
       points: [
         'No payment card data processed, stored, or transmitted',
-        'Orders are submitted without any payment step in DineFlow',
+        'Orders are submitted without any payment step in Restreasy',
         'PCI-DSS scope analysis confirmed with third-party assessor',
         'Merchants retain full control over their payment processors',
         'Razorpay / PayU integration guidelines provided for merchants who opt-in',
@@ -61,7 +61,7 @@ export default function CompliancePage() {
       jurisdiction: 'India (FSSAI, GST, State regulations)',
       status: 'Supportive',
       statusColor: 'text-amber-600 bg-amber-50 border-amber-100',
-      desc: 'DineFlow supports restaurants in displaying FSSAI license information on their menu interfaces as required under food safety regulations. Merchants can add allergen disclosures, caloric information, and certification numbers to individual menu items. We generate GST-inclusive price display options and support proper menu categorization for businesses operating under FSSAI\'s food business operator license requirements.',
+      desc: 'Restreasy supports restaurants in displaying FSSAI license information on their menu interfaces as required under food safety regulations. Merchants can add allergen disclosures, caloric information, and certification numbers to individual menu items. We generate GST-inclusive price display options and support proper menu categorization for businesses operating under FSSAI\'s food business operator license requirements.',
       points: [
         'FSSAI license number display on menu interface (optional)',
         'Allergen disclosure fields on each menu item',
@@ -88,11 +88,11 @@ export default function CompliancePage() {
     },
     {
       title: 'Accuracy & Rectification',
-      desc: 'Merchants can update all account information, menu data, and settings directly from their dashboard at any time. Incorrect data submitted during onboarding can be corrected by contacting support@dineflow.in.'
+      desc: 'Merchants can update all account information, menu data, and settings directly from their dashboard at any time. Incorrect data submitted during onboarding can be corrected by contacting support@restreasy.in.'
     },
     {
       title: 'Accountability & Governance',
-      desc: 'DineFlow maintains an internal data governance register documenting all data categories processed, their purposes, retention periods, and the legal basis for processing. This register is available to enterprise clients for audit purposes under NDA.'
+      desc: 'Restreasy maintains an internal data governance register documenting all data categories processed, their purposes, retention periods, and the legal basis for processing. This register is available to enterprise clients for audit purposes under NDA.'
     },
     {
       title: 'Third-party Processor Standards',
@@ -123,7 +123,7 @@ export default function CompliancePage() {
         <div className="space-y-3">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Our Compliance Overview</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            DineFlow is designed as a privacy-first product that deliberately minimizes data collection at every layer. Our compliance posture reflects both the legal requirements of our operating jurisdictions and our own ethical commitments around responsible data handling. This page provides a transparent, detailed breakdown of each compliance framework we address.
+            Restreasy is designed as a privacy-first product that deliberately minimizes data collection at every layer. Our compliance posture reflects both the legal requirements of our operating jurisdictions and our own ethical commitments around responsible data handling. This page provides a transparent, detailed breakdown of each compliance framework we address.
           </p>
         </div>
 
@@ -171,7 +171,7 @@ export default function CompliancePage() {
         <div className="border-t border-[#EFEFEF] pt-8 space-y-5">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Data Governance Principles</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            Beyond specific regulatory frameworks, DineFlow applies these overarching data governance principles across all product decisions and system designs.
+            Beyond specific regulatory frameworks, Restreasy applies these overarching data governance principles across all product decisions and system designs.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {policies.map((p, pi) => (
@@ -193,8 +193,8 @@ export default function CompliancePage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { label: 'Data Protection Officer', email: 'dpo@dineflow.in', desc: 'DSAR, GDPR, and DPDP Act requests' },
-              { label: 'Legal & Compliance Team', email: 'legal@dineflow.in', desc: 'DPAs, audits, and regulatory enquiries' }
+              { label: 'Data Protection Officer', email: 'dpo@restreasy.in', desc: 'DSAR, GDPR, and DPDP Act requests' },
+              { label: 'Legal & Compliance Team', email: 'legal@restreasy.in', desc: 'DPAs, audits, and regulatory enquiries' }
             ].map((c, ci) => (
               <div key={ci} className="border border-[#EFEFEF] rounded-xl p-5 bg-[#FAFAFA]/50 space-y-1">
                 <p className="font-black text-[#111827] text-xs">{c.label}</p>

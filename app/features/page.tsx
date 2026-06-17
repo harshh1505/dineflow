@@ -9,7 +9,7 @@ export default function FeaturesPage() {
       color: 'text-[#FF6B35] bg-[#FFF7F2]',
       title: 'Digital Menu Branding & Styling Customizer',
       subtitle: 'Create a visual interface that is uniquely yours.',
-      desc: 'DineFlow allows full freedom over the styling and representation of your digital menu cards. Replace boring PDFs with interactive web views. Merchants can configure primary colors, buttons, logos, text overlays, and banner headers that exactly align with your physical decor. Add vegetation categories, dietary warning cards, and descriptions to ensure dining clarity. Upload your restaurant logo and set a custom accent color that flows across the entire guest-facing menu interface.',
+      desc: 'Restreasy allows full freedom over the styling and representation of your digital menu cards. Replace boring PDFs with interactive web views. Merchants can configure primary colors, buttons, logos, text overlays, and banner headers that exactly align with your physical decor. Add vegetation categories, dietary warning cards, and descriptions to ensure dining clarity. Upload your restaurant logo and set a custom accent color that flows across the entire guest-facing menu interface.',
       highlights: ['Custom brand color themes', 'Logo & header image upload', 'Menu banner customization', 'Font & layout controls']
     },
     {
@@ -110,14 +110,14 @@ export default function FeaturesPage() {
   ];
 
   const comparison = [
-    { feature: 'No app installation required', dineflow: true, paper: false, tablet: false },
-    { feature: 'Real-time availability updates', dineflow: true, paper: false, tablet: true },
-    { feature: 'Print-ready QR PDF export', dineflow: true, paper: false, tablet: false },
-    { feature: 'Zero commission on orders', dineflow: true, paper: true, tablet: false },
-    { feature: 'Dietary filter (Veg / Jain / Allergen)', dineflow: true, paper: false, tablet: true },
-    { feature: 'Custom branding & logo', dineflow: true, paper: false, tablet: true },
-    { feature: 'Multi-language support', dineflow: true, paper: false, tablet: false },
-    { feature: 'No hardware purchase needed', dineflow: true, paper: true, tablet: false },
+    { feature: 'No app installation required', restreasy: true, paper: false, tablet: false },
+    { feature: 'Real-time availability updates', restreasy: true, paper: false, tablet: true },
+    { feature: 'Print-ready QR PDF export', restreasy: true, paper: false, tablet: false },
+    { feature: 'Zero commission on orders', restreasy: true, paper: true, tablet: false },
+    { feature: 'Dietary filter (Veg / Jain / Allergen)', restreasy: true, paper: false, tablet: true },
+    { feature: 'Custom branding & logo', restreasy: true, paper: false, tablet: true },
+    { feature: 'Multi-language support', restreasy: true, paper: false, tablet: false },
+    { feature: 'No hardware purchase needed', restreasy: true, paper: true, tablet: false },
   ];
 
   return (
@@ -134,7 +134,7 @@ export default function FeaturesPage() {
         <div className="space-y-3">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Features Suite Overview</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            DineFlow is built from the ground up to solve structural dining problems. By placing elegant QR cards on dining tables, you empower guests, speed up the ordering process, and eliminate printing costs forever. Below is the complete suite of features available to every DineFlow merchant account.
+            Restreasy is built from the ground up to solve structural dining problems. By placing elegant QR cards on dining tables, you empower guests, speed up the ordering process, and eliminate printing costs forever. Below is the complete suite of features available to every Restreasy merchant account.
           </p>
         </div>
 
@@ -179,7 +179,7 @@ export default function FeaturesPage() {
 
         {/* Comparison Table */}
         <div className="border-t border-[#EFEFEF] pt-8 space-y-4">
-          <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">DineFlow vs. Alternatives</h2>
+          <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Restreasy vs. Alternatives</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
             See how a browser-based QR menu compares to outdated paper menus or expensive tablet-based kiosk systems.
           </p>
@@ -188,7 +188,7 @@ export default function FeaturesPage() {
               <thead>
                 <tr className="bg-[#FAFAFA] border-b border-[#EFEFEF]">
                   <th className="text-left px-5 py-3.5 font-black text-slate-700 w-1/2">Feature</th>
-                  <th className="px-4 py-3.5 font-black text-[#FF6B35]">DineFlow</th>
+                  <th className="px-4 py-3.5 font-black text-[#FF6B35]">Restreasy</th>
                   <th className="px-4 py-3.5 font-black text-slate-400">Paper Menu</th>
                   <th className="px-4 py-3.5 font-black text-slate-400">Tablet Kiosk</th>
                 </tr>
@@ -197,7 +197,7 @@ export default function FeaturesPage() {
                 {comparison.map((row, ri) => (
                   <tr key={ri} className="hover:bg-[#FAFAFA]/60 transition-colors">
                     <td className="px-5 py-3 font-semibold text-slate-600">{row.feature}</td>
-                    <td className="px-4 py-3 text-center">{row.dineflow ? <span className="text-emerald-500 font-black">✓</span> : <span className="text-rose-400 font-black">✗</span>}</td>
+                    <td className="px-4 py-3 text-center">{row.restreasy ? <span className="text-emerald-500 font-black">✓</span> : <span className="text-rose-400 font-black">✗</span>}</td>
                     <td className="px-4 py-3 text-center">{row.paper ? <span className="text-emerald-500 font-black">✓</span> : <span className="text-rose-400 font-black">✗</span>}</td>
                     <td className="px-4 py-3 text-center">{row.tablet ? <span className="text-emerald-500 font-black">✓</span> : <span className="text-rose-400 font-black">✗</span>}</td>
                   </tr>
@@ -243,7 +243,7 @@ export default function FeaturesPage() {
         <div className="border-t border-[#EFEFEF] pt-8 text-center space-y-4">
           <h3 className="font-black text-slate-800 text-sm">Ready to enable these features for your restaurant?</h3>
           <p className="text-slate-500 font-semibold text-xs max-w-md mx-auto leading-relaxed">
-            Submit an enquiry and our team will configure your full DineFlow setup — including table mapping, menu upload, and QR code export — within 24 hours.
+            Submit an enquiry and our team will configure your full Restreasy setup — including table mapping, menu upload, and QR code export — within 24 hours.
           </p>
           <Link href="/enquire" className="inline-block bg-[#FF6B35] hover:bg-[#e05420] text-white font-bold px-8 py-3 rounded-xl text-xs transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
             Enquire About Your Setup →

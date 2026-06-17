@@ -8,12 +8,12 @@ export default function PrivacyPolicyPage() {
     {
       number: '1',
       title: 'Introduction & Scope of This Policy',
-      content: `This Privacy Policy describes how DineFlow Technologies Pvt. Ltd. ("DineFlow", "we", "our", or "us") collects, uses, stores, and shares information when you interact with our platform — including the DineFlow website (dineflow.in), the merchant administration dashboard, and the guest-facing QR menu interfaces served at restaurant tables.
+      content: `This Privacy Policy describes how Restreasy Technologies Pvt. Ltd. ("Restreasy", "we", "our", or "us") collects, uses, stores, and shares information when you interact with our platform — including the Restreasy website (restreasy.in), the merchant administration dashboard, and the guest-facing QR menu interfaces served at restaurant tables.
 
 This policy applies to:
 • Restaurant and cafe owners and operators who submit enquiries or use our merchant dashboard ("Merchants")
 • Members of restaurant staff who access the merchant backoffice
-• Visitors to our marketing website (dineflow.in and associated pages)
+• Visitors to our marketing website (restreasy.in and associated pages)
 • Dining guests who access restaurant menus via QR codes (guest-only data practices described in Section 4)
 
 If you are a dining guest using a restaurant's QR menu, we want to be clear upfront: we do not collect any personal information from you. Guest menu usage is anonymous by design.`
@@ -21,7 +21,7 @@ If you are a dining guest using a restaurant's QR menu, we want to be clear upfr
     {
       number: '2',
       title: 'Information We Collect from Merchants',
-      content: `When you submit an enquiry form or set up a DineFlow merchant account, we collect the following information:
+      content: `When you submit an enquiry form or set up a Restreasy merchant account, we collect the following information:
 
 Restaurant Information:
 • Restaurant or Cafe name
@@ -50,7 +50,7 @@ We do not collect payment card numbers. If you purchase a paid subscription, bil
       content: `We use the information collected from merchants for the following specific purposes only:
 
 Service Delivery:
-• Setting up and configuring your restaurant's DineFlow profile
+• Setting up and configuring your restaurant's Restreasy profile
 • Generating unique QR codes for each table you register
 • Providing your restaurant with access to the merchant administration dashboard
 • Processing subscription payments through our payment processor
@@ -73,7 +73,7 @@ We will never sell your data to third parties, use it for advertising purposes, 
     {
       number: '4',
       title: 'Guest Dining Data — Our No-collection Policy',
-      content: `If you are a dining guest who accessed a restaurant's QR menu through DineFlow, this section applies to you.
+      content: `If you are a dining guest who accessed a restaurant's QR menu through Restreasy, this section applies to you.
 
 What we do NOT collect from guests:
 • Name, email address, phone number, or any personally identifiable information
@@ -96,7 +96,7 @@ The guest menu page caches menu category and item data in the browser's local st
     {
       number: '5',
       title: 'Cookies & Tracking Technologies',
-      content: `DineFlow's marketing website (dineflow.in) uses minimal cookies:
+      content: `Restreasy's marketing website (restreasy.in) uses minimal cookies:
 
 Essential Cookies (required):
 • Session authentication cookie for logged-in merchant dashboard sessions
@@ -126,14 +126,14 @@ Retention Periods:
 • Dashboard activity audit logs: retained for 90 days
 
 Data Deletion Requests:
-You may request deletion of your account and all associated data at any time by emailing privacy@dineflow.in with the subject "DATA DELETION REQUEST". We will confirm deletion within 5 business days and complete the permanent deletion within 30 days.
+You may request deletion of your account and all associated data at any time by emailing privacy@restreasy.in with the subject "DATA DELETION REQUEST". We will confirm deletion within 5 business days and complete the permanent deletion within 30 days.
 
 Note: Where applicable law requires us to retain certain data (e.g., billing records for 7 years under Indian accounting law), we will retain only the legally required minimum and notify you of the retention obligation.`
     },
     {
       number: '7',
       title: 'Your Rights as a Merchant',
-      content: `As a DineFlow merchant account holder, you have the following rights regarding your data:
+      content: `As a Restreasy merchant account holder, you have the following rights regarding your data:
 
 Right to Access: Request a copy of all personal data we hold about you and your restaurant account. We provide this in a machine-readable format (JSON) within 30 days of the request.
 
@@ -147,7 +147,7 @@ Right to Restrict Processing: Request that we limit processing of your data to s
 
 Right to Object: Object to our use of your data for any purpose not strictly necessary for service delivery. We will cease that processing unless we have a compelling legitimate ground.
 
-To exercise any of these rights, contact: privacy@dineflow.in`
+To exercise any of these rights, contact: privacy@restreasy.in`
     },
     {
       number: '8',
@@ -173,7 +173,7 @@ We do not sell personal data. We do not share personal data with advertisers.`
     {
       number: '9',
       title: 'Children\'s Privacy',
-      content: `DineFlow's merchant platform is designed for use by adults operating food service businesses. We do not knowingly collect personal information from individuals under the age of 18. If you are a parent or guardian and believe your child has submitted personal information to us through our enquiry form, contact us immediately at privacy@dineflow.in and we will promptly delete the information.
+      content: `Restreasy's merchant platform is designed for use by adults operating food service businesses. We do not knowingly collect personal information from individuals under the age of 18. If you are a parent or guardian and believe your child has submitted personal information to us through our enquiry form, contact us immediately at privacy@restreasy.in and we will promptly delete the information.
 
 Guest dining menus do not collect any information from any person, including minors.`
     },
@@ -186,7 +186,7 @@ Guest dining menus do not collect any information from any person, including min
 • Send an email notification to all active merchant accounts at least 14 days before the changes take effect (for changes that reduce your rights or expand our data use)
 • Display a notice on the merchant dashboard for 30 days following a significant update
 
-Continued use of DineFlow after the effective date of an updated policy constitutes acceptance of the revised terms. If you do not agree with changes, you may close your account before the changes take effect.
+Continued use of Restreasy after the effective date of an updated policy constitutes acceptance of the revised terms. If you do not agree with changes, you may close your account before the changes take effect.
 
 For minor updates (grammar corrections, clarifications that do not change the substance of the policy), we may update without notification but will always reflect the current date.`
     },
@@ -195,9 +195,9 @@ For minor updates (grammar corrections, clarifications that do not change the su
       title: 'Contact & Questions',
       content: `For any privacy-related questions, data requests, or concerns about our data practices, contact our privacy team:
 
-Privacy Team: privacy@dineflow.in
-Data Protection Officer: dpo@dineflow.in
-Postal Address: DineFlow Technologies Pvt. Ltd., BKC Finance Hub, Mumbai, Maharashtra, India — 400051
+Privacy Team: privacy@restreasy.in
+Data Protection Officer: dpo@restreasy.in
+Postal Address: Restreasy Technologies Pvt. Ltd., BKC Finance Hub, Mumbai, Maharashtra, India — 400051
 
 We aim to respond to all privacy enquiries within 5 business days. For urgent matters involving potential data breaches or sensitive rights requests, please mark your email subject line "URGENT — Privacy Matter" for expedited handling.`
     }
@@ -206,7 +206,7 @@ We aim to respond to all privacy enquiries within 5 business days. For urgent ma
   return (
     <InfoLayout
       title="Privacy Policy"
-      subtitle="How DineFlow collects, manages, stores, and protects information from merchants, staff, and dining guests."
+      subtitle="How Restreasy collects, manages, stores, and protects information from merchants, staff, and dining guests."
       category="Legal Documents"
       icon={ShieldCheck}
       accentColor="text-[#FF6B35] bg-[#FFF7F2] border-[#FF6B35]/20"
@@ -221,7 +221,7 @@ We aim to respond to all privacy enquiries within 5 business days. For urgent ma
           </div>
           <div className="space-y-1 text-right">
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Governing Entity</p>
-            <p className="text-xs font-black text-[#111827]">DineFlow Technologies Pvt. Ltd.</p>
+            <p className="text-xs font-black text-[#111827]">Restreasy Technologies Pvt. Ltd.</p>
           </div>
         </div>
 

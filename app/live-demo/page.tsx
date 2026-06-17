@@ -47,7 +47,7 @@ export default function LiveDemoPage() {
     {
       icon: QrCode,
       title: 'Preview a QR Code Export',
-      desc: 'See an example of the printable QR code PDF that DineFlow generates for each table. The PDF includes the table number label, high-resolution vector QR code, and the DineFlow branding — all formatted for A6 standee cards or standard A4 sheets.',
+      desc: 'See an example of the printable QR code PDF that Restreasy generates for each table. The PDF includes the table number label, high-resolution vector QR code, and the Restreasy branding — all formatted for A6 standee cards or standard A4 sheets.',
       link: '/enquire',
       linkText: 'Request Sample PDF',
       color: 'border-emerald-200 bg-emerald-50/20',
@@ -67,7 +67,7 @@ export default function LiveDemoPage() {
   return (
     <InfoLayout
       title="Live Demo"
-      subtitle="Explore DineFlow from both the customer's perspective and the merchant dashboard — no account needed."
+      subtitle="Explore Restreasy from both the customer's perspective and the merchant dashboard — no account needed."
       category="Product Trials"
       icon={Globe}
       accentColor="text-[#FF6B35] bg-[#FFF7F2] border-[#FF6B35]/20"
@@ -78,7 +78,7 @@ export default function LiveDemoPage() {
         <div className="space-y-3">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Test Drive the Experience</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            DineFlow operates as a dual-channel system: a guest-facing QR menu that runs in any mobile browser, and a merchant administration dashboard for restaurant staff. Our live demo lets you experience both sides without setting up an account. Select your demo scenario below.
+            Restreasy operates as a dual-channel system: a guest-facing QR menu that runs in any mobile browser, and a merchant administration dashboard for restaurant staff. Our live demo lets you experience both sides without setting up an account. Select your demo scenario below.
           </p>
         </div>
 
@@ -201,7 +201,7 @@ export default function LiveDemoPage() {
         <div className="border-t border-[#EFEFEF] pt-8 space-y-4 text-center">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Liked What You Saw?</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed max-w-md mx-auto">
-            Submit an enquiry and our team will set up a custom DineFlow instance for your restaurant — including menu upload, table QR setup, and branding configuration — within 24 hours.
+            Submit an enquiry and our team will set up a custom Restreasy instance for your restaurant — including menu upload, table QR setup, and branding configuration — within 24 hours.
           </p>
           <Link href="/enquire" className="inline-flex items-center gap-1.5 bg-[#FF6B35] hover:bg-[#e05420] text-white font-bold px-8 py-3 rounded-xl text-xs transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
             Set Up My Restaurant's Menu <ArrowRight className="w-3.5 h-3.5" />

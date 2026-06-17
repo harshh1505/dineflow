@@ -4,7 +4,7 @@ import { FileText, ArrowDownToLine, CheckCircle2, Mail, ExternalLink } from 'luc
 
 export default function PressKitPage() {
   const facts = [
-    { label: 'Company Name', value: 'DineFlow Technologies Pvt. Ltd.' },
+    { label: 'Company Name', value: 'Restreasy Technologies Pvt. Ltd.' },
     { label: 'Founded', value: '2023 (Incorporated 2024)' },
     { label: 'Headquarters', value: 'BKC Finance Hub, Mumbai, Maharashtra, India — 400051' },
     { label: 'Founders', value: 'Vikram Malhotra (CEO) & Shreya Iyer (CTO)' },
@@ -12,12 +12,12 @@ export default function PressKitPage() {
     { label: 'Product Type', value: 'SaaS (Software as a Service) — B2B, sold per restaurant' },
     { label: 'Markets Served', value: 'India (primary), UAE & Singapore (expanding)' },
     { label: 'Current Stage', value: 'Seed-stage, actively onboarding restaurant partners' },
-    { label: 'Pricing Model', value: '₹25,000 setup fee + Pro Fixed (₹1,000/mo) / Partner Share (2%) / Enterprise Suite (₹2,000/mo)' },
-    { label: 'Revenue Model', value: 'Hybrid flat rate and revenue-share options — zero monthly commissions on fixed tiers' },
+    { label: 'Pricing Model', value: '₹15,000-₹25,000 setup fee + Pro Fixed (₹999/mo) / Partner Share (₹2,999/mo) / Enterprise Suite (Custom Pricing)' },
+    { label: 'Revenue Model', value: 'Flat monthly subscription options — zero monthly commissions on all tiers' },
   ];
 
   const colors = [
-    { name: 'DineFlow Orange', hex: '#FF6B35', rgb: 'RGB(255, 107, 53)', use: 'Primary brand, buttons, CTAs' },
+    { name: 'Restreasy Orange', hex: '#FF6B35', rgb: 'RGB(255, 107, 53)', use: 'Primary brand, buttons, CTAs' },
     { name: 'Deep Charcoal', hex: '#111827', rgb: 'RGB(17, 24, 39)', use: 'Primary text, headings' },
     { name: 'Platform Indigo', hex: '#4F46E5', rgb: 'RGB(79, 70, 229)', use: 'Dashboard accents, merchant UI' },
     { name: 'Neutral White', hex: '#FAFAFA', rgb: 'RGB(250, 250, 250)', use: 'Backgrounds, card surfaces' },
@@ -25,7 +25,7 @@ export default function PressKitPage() {
 
   const downloadAssets = [
     {
-      title: 'DineFlow Logo Pack (SVG + PNG)',
+      title: 'Restreasy Logo Pack (SVG + PNG)',
       desc: 'Contains the horizontal lockup, standalone icon mark, and wordmark — all in SVG vector format and PNG exports at @1x, @2x, and @3x resolutions. Dark and light variants included.',
       format: 'ZIP, ~3.2MB'
     },
@@ -41,7 +41,7 @@ export default function PressKitPage() {
     },
     {
       title: 'Company Factsheet (PDF)',
-      desc: 'A one-page summary of DineFlow\'s company background, product description, founding team, market focus, and key statistics — formatted for press and publication use.',
+      desc: 'A one-page summary of Restreasy\'s company background, product description, founding team, market focus, and key statistics — formatted for press and publication use.',
       format: 'PDF, ~1 page'
     },
     {
@@ -58,12 +58,12 @@ export default function PressKitPage() {
 
   const mediaQuotes = [
     {
-      quote: "DineFlow has the potential to become the standard for QR-based digital ordering for independent restaurants in India's Tier 1 and Tier 2 cities.",
+      quote: "Restreasy has the potential to become the standard for QR-based digital ordering for independent restaurants in India's Tier 1 and Tier 2 cities.",
       source: 'RestaurantTech India Review',
       date: 'April 2026'
     },
     {
-      quote: "What stands out about DineFlow is their commitment to a no-commission model — something the restaurant industry desperately needs after years of aggregator dependency.",
+      quote: "What stands out about Restreasy is their commitment to a no-commission model — something the restaurant industry desperately needs after years of aggregator dependency.",
       source: 'Hospitality Business Weekly',
       date: 'March 2026'
     }
@@ -71,11 +71,11 @@ export default function PressKitPage() {
 
   const guidelines = [
     'Always use the provided logo files — do not recreate or trace the logo manually.',
-    'Maintain minimum clear zone (equal to the height of the letter "D" in DineFlow) around the logo on all sides.',
+    'Maintain minimum clear zone (equal to the height of the letter "D" in Restreasy) around the logo on all sides.',
     'Do not alter the logo colors, proportions, rotation, or add drop shadows or embossing effects.',
     'Do not use the logo on backgrounds where it lacks sufficient contrast. Use the white version on dark backgrounds.',
-    'The company name is spelled "DineFlow" (one word, capital D and capital F). Do not write "Dine Flow", "dineflow", or "DINEFLOW".',
-    'Do not use DineFlow branding to imply endorsement of third-party products without written permission from our PR team.',
+    'The company name is spelled "Restreasy" (one word, capital D and capital F). Do not write "Dine Flow", "restreasy", or "RESTREASY".',
+    'Do not use Restreasy branding to imply endorsement of third-party products without written permission from our PR team.',
   ];
 
   return (
@@ -92,7 +92,7 @@ export default function PressKitPage() {
         <div className="space-y-3">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">For Journalists & Content Creators</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            If you are writing about DineFlow, the QR menu technology space, or the broader restaurant tech industry, this page provides all the brand assets and company information you need. For specific media enquiries, interview requests, or exclusive content, contact our PR team directly.
+            If you are writing about Restreasy, the QR menu technology space, or the broader restaurant tech industry, this page provides all the brand assets and company information you need. For specific media enquiries, interview requests, or exclusive content, contact our PR team directly.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ export default function PressKitPage() {
         <div className="border-t border-[#EFEFEF] pt-8 space-y-5">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Downloadable Brand Assets</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            All assets are available for editorial and journalistic use. Commercial use or modification of brand assets requires written permission. Contact press@dineflow.in to request access.
+            All assets are available for editorial and journalistic use. Commercial use or modification of brand assets requires written permission. Contact press@restreasy.in to request access.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {downloadAssets.map((a, ai) => (
@@ -195,8 +195,8 @@ export default function PressKitPage() {
           <div className="border border-[#EFEFEF] rounded-2xl p-6 bg-white space-y-3">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
               {[
-                { label: 'PR & Communications Lead', value: 'Anjali Desai', email: 'press@dineflow.in' },
-                { label: 'General Enquiries', value: 'Communications Team', email: 'media@dineflow.in' }
+                { label: 'PR & Communications Lead', value: 'Anjali Desai', email: 'press@restreasy.in' },
+                { label: 'General Enquiries', value: 'Communications Team', email: 'media@restreasy.in' }
               ].map((c, ci) => (
                 <div key={ci} className="space-y-1">
                   <p className="text-[9px] font-black text-slate-400 uppercase tracking-wider">{c.label}</p>

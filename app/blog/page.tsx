@@ -8,7 +8,7 @@ export default function BlogPage() {
     date: 'June 10, 2026',
     read: '7 min read',
     author: 'Arjun Sharma',
-    role: 'Product Strategy, DineFlow',
+    role: 'Product Strategy, Restreasy',
     category: 'Menu Engineering',
     categoryColor: 'text-[#FF6B35] bg-[#FFF7F2]',
     summary: 'When customer attention is split across fifty items in a dense menu, layout engineering acts as a subtle guide that directs eyes to the right places at the right moments. In this deep-dive, we examine how the strategic placement of Bestseller badges, Chef\'s Special callouts, and high-quality photography on specific items creates a hierarchy that nudges guests toward high-margin choices — without feeling manipulative. Our research across 8 partner restaurants shows an average 18% increase in order value after implementing structured layout changes.',
@@ -39,14 +39,14 @@ export default function BlogPage() {
       tags: ['Cafes', 'Category Design', 'Efficiency']
     },
     {
-      title: 'How DineFlow Partners Reduced Print Spend by ₹48,000/Year',
+      title: 'How Restreasy Partners Reduced Print Spend by ₹48,000/Year',
       date: 'April 22, 2026',
       read: '4 min read',
       author: 'Vikram Malhotra',
-      role: 'CEO, DineFlow',
+      role: 'CEO, Restreasy',
       category: 'Case Study',
       categoryColor: 'text-amber-600 bg-amber-50',
-      summary: 'A 22-table cafe in Koramangala, Bangalore was spending over ₹48,000 per year on printed menus — reprinting every time they updated a price, added a seasonal item, or redesigned their layout. After switching to DineFlow\'s digital QR system, their print budget dropped to near zero while customer feedback on the ordering experience improved significantly.',
+      summary: 'A 22-table cafe in Koramangala, Bangalore was spending over ₹48,000 per year on printed menus — reprinting every time they updated a price, added a seasonal item, or redesigned their layout. After switching to Restreasy\'s digital QR system, their print budget dropped to near zero while customer feedback on the ordering experience improved significantly.',
       tags: ['Cost Savings', 'Case Study', 'Sustainability']
     },
     {
@@ -54,7 +54,7 @@ export default function BlogPage() {
       date: 'April 8, 2026',
       read: '5 min read',
       author: 'Priya Nair',
-      role: 'UX Research, DineFlow',
+      role: 'UX Research, Restreasy',
       category: 'Product Design',
       categoryColor: 'text-purple-600 bg-purple-50',
       summary: 'The traditional green/red dot system doesn\'t cover the full spectrum of dietary requirements in Indian dining contexts. Jain preferences, nut allergies, gluten sensitivities, and dairy exclusions require more nuanced labeling. We explore how digital menus can present richer dietary metadata without cluttering the visual layout or slowing the ordering flow.',
@@ -65,7 +65,7 @@ export default function BlogPage() {
       date: 'March 25, 2026',
       read: '4 min read',
       author: 'Ravi Kumar',
-      role: 'Data & Analytics, DineFlow',
+      role: 'Data & Analytics, Restreasy',
       category: 'Data & Research',
       categoryColor: 'text-slate-600 bg-slate-100',
       summary: 'Out-of-stock orders — where a customer orders a dish that has already sold out — create a cascade of negative experiences: kitchen delays, waiter awkwardness, and guest disappointment. We analyzed 3,400 orders across our partner restaurants and found that real-time item toggles reduce out-of-stock incidents by 91% compared to static menus.',
@@ -76,7 +76,7 @@ export default function BlogPage() {
       date: 'March 10, 2026',
       read: '8 min read',
       author: 'Shreya Iyer',
-      role: 'CTO, DineFlow',
+      role: 'CTO, Restreasy',
       category: 'Data & Research',
       categoryColor: 'text-slate-600 bg-slate-100',
       summary: 'After analyzing 10,000+ QR code scans across 30 partner restaurants, we found consistent ordering patterns: breakfast peaks between 8:30–10:00 AM, lunch between 12:30–1:45 PM, and dinner starting sharply at 7:30 PM. Understanding these windows helps restaurants pre-stage inventory, staff up efficiently, and time promotional item highlighting on their menus.',
@@ -93,7 +93,7 @@ export default function BlogPage() {
 
   return (
     <InfoLayout
-      title="DineFlow Blog"
+      title="Restreasy Blog"
       subtitle="Industry insights, menu engineering research, and digital strategy guides for modern cafes and restaurants."
       category="Our Blog"
       icon={Newspaper}
@@ -219,7 +219,7 @@ export default function BlogPage() {
               Subscribe <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
-          <p className="text-[10px] text-slate-400 font-semibold">By subscribing, you agree to receive marketing emails from DineFlow. Unsubscribe at any time.</p>
+          <p className="text-[10px] text-slate-400 font-semibold">By subscribing, you agree to receive marketing emails from Restreasy. Unsubscribe at any time.</p>
         </div>
 
       </div>

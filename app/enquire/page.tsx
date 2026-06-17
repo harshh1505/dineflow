@@ -57,7 +57,7 @@ export default function EnquirePage() {
             <div className="bg-[#FF6B35] p-2 rounded-xl text-white group-hover:scale-105 transition-transform duration-200">
               <QrCode className="w-5 h-5" />
             </div>
-            <span className="font-extrabold text-xl tracking-tight text-[#111827]">DineFlow</span>
+            <span className="font-extrabold text-xl tracking-tight text-[#111827]">Restreasy</span>
           </Link>
         </div>
 
@@ -71,7 +71,7 @@ export default function EnquirePage() {
             <div className="space-y-2">
               <h3 className="text-xl font-black text-[#111827]">Enquiry Submitted!</h3>
               <p className="text-xs text-slate-500 leading-relaxed font-semibold max-w-sm mx-auto">
-                Thank you for your interest in DineFlow. We have received your request and reserved your preferred slot (June {selectedDay}, 2026 at {selectedTime}). Our team will reach out to you via WhatsApp shortly.
+                Thank you for your interest in Restreasy. We have received your request and reserved your preferred slot (June {selectedDay}, 2026 at {selectedTime}). Our team will reach out to you via WhatsApp shortly.
               </p>
             </div>
             <div className="pt-4 border-t border-[#EAEAEA] flex flex-col gap-3">
@@ -115,11 +115,11 @@ export default function EnquirePage() {
             <div className="bg-[#FF6B35] p-2 rounded-xl text-white group-hover:scale-105 transition-transform duration-200">
               <QrCode className="w-5 h-5" />
             </div>
-            <span className="font-extrabold text-xl tracking-tight text-[#111827]">DineFlow</span>
+            <span className="font-extrabold text-xl tracking-tight text-[#111827]">Restreasy</span>
           </Link>
           <h2 className="text-2xl font-black text-[#111827] tracking-tight animate-fade-in">Request a Custom Demo</h2>
           <p className="mt-1 text-xs text-slate-500 font-semibold max-w-md mx-auto">
-            Tell us about your restaurant and choose a convenient time slot for a personalized DineFlow walk-through.
+            Tell us about your restaurant and choose a convenient time slot for a personalized Restreasy walk-through.
           </p>
         </div>
 

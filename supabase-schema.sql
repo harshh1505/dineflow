@@ -1,4 +1,4 @@
--- Supabase Database Schema for DineFlow
+-- Supabase Database Schema for Restreasy
 -- Direct drop-in runnable in Supabase SQL Editor
 
 -- Enable UUID generation extension

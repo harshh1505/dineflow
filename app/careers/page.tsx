@@ -59,7 +59,7 @@ export default function CareersPage() {
       typeColor: 'text-[#FF6B35] bg-[#FFF7F2]',
       posted: 'June 5, 2026',
       salary: '₹12L – ₹18L per annum',
-      desc: 'Define and craft the visual language of DineFlow — from the guest-facing QR menu interfaces to the merchant backoffice dashboard. You will own end-to-end design flows, from user research through to Figma prototypes and handoff to engineering.',
+      desc: 'Define and craft the visual language of Restreasy — from the guest-facing QR menu interfaces to the merchant backoffice dashboard. You will own end-to-end design flows, from user research through to Figma prototypes and handoff to engineering.',
       responsibilities: [
         'Design mobile-first QR menu interfaces for guest-facing experiences',
         'Create merchant dashboard layouts (orders, menu management, analytics)',
@@ -84,10 +84,10 @@ export default function CareersPage() {
       typeColor: 'text-emerald-600 bg-emerald-50',
       posted: 'May 28, 2026',
       salary: '₹7L – ₹11L per annum',
-      desc: 'Act as the primary point of contact for every new restaurant partner during and after their onboarding experience. You will help them configure their menus, export QR sheets, resolve issues, and grow their confidence using DineFlow to serve their tables.',
+      desc: 'Act as the primary point of contact for every new restaurant partner during and after their onboarding experience. You will help them configure their menus, export QR sheets, resolve issues, and grow their confidence using Restreasy to serve their tables.',
       responsibilities: [
         'Onboard new restaurant accounts — from enquiry to first live QR scan',
-        'Assist merchants in formatting their PDF menus into DineFlow categories',
+        'Assist merchants in formatting their PDF menus into Restreasy categories',
         'Help configure table layouts, print QR code sheets, and place standees',
         'Resolve post-launch support tickets via WhatsApp, email, and video call',
         'Collect structured feedback from restaurant partners for the product team',
@@ -109,7 +109,7 @@ export default function CareersPage() {
       typeColor: 'text-indigo-600 bg-indigo-50',
       posted: 'May 15, 2026',
       salary: '₹16L – ₹24L per annum',
-      desc: 'Own the server-side infrastructure powering DineFlow\'s order feeds, menu data APIs, and restaurant account management. You will work with real-time data pipelines and ensure that kitchen order updates reach dashboard clients within 500 milliseconds of submission.',
+      desc: 'Own the server-side infrastructure powering Restreasy\'s order feeds, menu data APIs, and restaurant account management. You will work with real-time data pipelines and ensure that kitchen order updates reach dashboard clients within 500 milliseconds of submission.',
       responsibilities: [
         'Design and maintain RESTful APIs for menu CRUD, order management, and account provisioning',
         'Implement real-time WebSocket order feed delivery to merchant dashboards',
@@ -137,7 +137,7 @@ export default function CareersPage() {
     'Quarterly team offsites in restaurant cities across India',
     'Monthly restaurant dining allowance (₹2,000) — you\'re building for them, you should eat like them',
     'ESOP participation for all full-time employees after 6-month cliff',
-    'Access to DineFlow Pro plan for personal restaurant or cafe projects'
+    'Access to Restreasy Pro plan for personal restaurant or cafe projects'
   ];
 
   return (
@@ -152,7 +152,7 @@ export default function CareersPage() {
 
         {/* Intro */}
         <div className="space-y-3">
-          <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Join DineFlow</h2>
+          <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Join Restreasy</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
             We are a distributed team passionate about code, visual design, and supporting local restaurants that form the backbone of India's food culture. If you want to build products that are used directly on dining tables every single day, and you care deeply about craft and quality, we'd love to hear from you.
           </p>

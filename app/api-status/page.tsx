@@ -99,7 +99,7 @@ export default function ApiStatusPage() {
     {
       icon: Server,
       title: 'Hosting Infrastructure',
-      desc: 'DineFlow\'s primary API and database infrastructure is hosted on Google Cloud Platform (GCP) with dedicated compute nodes in the Mumbai region (asia-south1). All restaurant account data is stored within India, complying with applicable data residency requirements.'
+      desc: 'Restreasy\'s primary API and database infrastructure is hosted on Google Cloud Platform (GCP) with dedicated compute nodes in the Mumbai region (asia-south1). All restaurant account data is stored within India, complying with applicable data residency requirements.'
     },
     {
       icon: Database,
@@ -121,7 +121,7 @@ export default function ApiStatusPage() {
   return (
     <InfoLayout
       title="System Status"
-      subtitle="Real-time status and uptime metrics for all DineFlow core services and infrastructure components."
+      subtitle="Real-time status and uptime metrics for all Restreasy core services and infrastructure components."
       category="API & Infrastructure"
       icon={Activity}
       accentColor="text-emerald-600 bg-emerald-50 border-emerald-100"
@@ -261,7 +261,7 @@ export default function ApiStatusPage() {
             To receive proactive incident notifications via email or WhatsApp, contact us through the support page and ask to be added to our status alert list.
           </p>
           <a
-            href="mailto:status@dineflow.in"
+            href="mailto:status@restreasy.in"
             className="inline-flex items-center gap-1.5 bg-[#FF6B35] hover:bg-[#e05420] text-white font-bold px-6 py-3 rounded-xl text-xs transition-all shadow-sm hover:shadow-md"
           >
             Subscribe to Incident Alerts

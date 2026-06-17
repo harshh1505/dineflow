@@ -11,9 +11,9 @@ export default function GuidesPage() {
       diffColor: 'text-emerald-600 bg-emerald-50',
       icon: Star,
       featured: true,
-      intro: 'This guide walks you through every step required to go from a blank DineFlow account to a fully live QR menu system at your dining tables — including menu build-out, branding, table setup, and printing.',
+      intro: 'This guide walks you through every step required to go from a blank Restreasy account to a fully live QR menu system at your dining tables — including menu build-out, branding, table setup, and printing.',
       steps: [
-        { step: 'Request account access by submitting the enquiry form at dineflow.in/enquire with your restaurant name, number of tables, and contact details.' },
+        { step: 'Request account access by submitting the enquiry form at restreasy.in/enquire with your restaurant name, number of tables, and contact details.' },
         { step: 'Our team will configure your base account and send credentials to your WhatsApp number within 24 hours of your enquiry submission.' },
         { step: 'Log in and begin by setting up Menu Categories. Think of these as tabs on your menu — Starters, Mains, Beverages, Desserts, Specials.' },
         { step: 'Add individual Menu Items under each category. Include name, description (1–2 sentences), price, dietary type (Veg/Non-Veg/Jain), and upload an image if available.' },
@@ -72,7 +72,7 @@ export default function GuidesPage() {
       featured: false,
       intro: 'The transition from verbal orders to a digital order feed is an operational shift that requires training your kitchen and floor teams. This guide walks you through setting up efficient workflows.',
       steps: [
-        { step: 'Set up a central kitchen display screen (a basic Android tablet or old iPad works well) mounted in a visible position for all kitchen staff. Keep the DineFlow dashboard open and stay logged in during service.' },
+        { step: 'Set up a central kitchen display screen (a basic Android tablet or old iPad works well) mounted in a visible position for all kitchen staff. Keep the Restreasy dashboard open and stay logged in during service.' },
         { step: 'Create a simple order acknowledgment flow: when a new order appears, the head of station marks it "In Progress" to signal acknowledgment to the floor manager\'s dashboard view.' },
         { step: 'Train floor staff to monitor the "Ready" status on their own dashboard view. When a kitchen station marks an order "Ready," a floor attendant picks up and delivers to the table.' },
         { step: 'Keep availability toggles updated in real-time. Assign one team member per shift the responsibility of toggling items off when they sell out. This prevents kitchen rejection of already-submitted orders.' },
@@ -101,22 +101,22 @@ export default function GuidesPage() {
       tips: ['Take 5–10 shots of each dish from different angles and choose the best one.', 'Update photos seasonally to keep the menu looking fresh and current.']
     },
     {
-      title: 'Integrating DineFlow with Your Existing Billing Counter Workflow',
+      title: 'Integrating Restreasy with Your Existing Billing Counter Workflow',
       duration: '5 min read',
       difficulty: 'Beginner',
       diffColor: 'text-emerald-600 bg-emerald-50',
       icon: CheckCircle2,
       featured: false,
-      intro: 'DineFlow handles the ordering step — guests scan, select, and submit. The final billing and payment step remains with your existing cash or card terminal process. This guide explains the handoff workflow.',
+      intro: 'Restreasy handles the ordering step — guests scan, select, and submit. The final billing and payment step remains with your existing cash or card terminal process. This guide explains the handoff workflow.',
       steps: [
-        { step: 'DineFlow does not replace your billing system. Think of it as a digital order-taking layer that sits between the guest and your existing counter workflow. Payments still go through your POS, cash register, or card terminal as before.' },
+        { step: 'Restreasy does not replace your billing system. Think of it as a digital order-taking layer that sits between the guest and your existing counter workflow. Payments still go through your POS, cash register, or card terminal as before.' },
         { step: 'When a guest submits an order, it appears on your dashboard feed with the table number, items, and quantities. Your counter or floor manager views this and prepares the kitchen ticket (or tickets to the kitchen display screen).' },
         { step: 'When guests are ready to pay, they signal a staff member (or walk to the counter). The billing team refers to the table\'s order feed in the dashboard to prepare the final bill total.' },
-        { step: 'For restaurants using standard printed receipts, continue generating receipts from your existing billing software. DineFlow order data can be referenced on a separate screen alongside your billing system.' },
-        { step: 'Mark the table as "Cleared" on the DineFlow dashboard when the guests leave. This clears the order feed and resets the table for the next occupants.' },
-        { step: 'At end of day, use the DineFlow daily order export (CSV) to cross-reference with your billing system\'s revenue records. This provides a full audit trail of orders versus bills settled.' }
+        { step: 'For restaurants using standard printed receipts, continue generating receipts from your existing billing software. Restreasy order data can be referenced on a separate screen alongside your billing system.' },
+        { step: 'Mark the table as "Cleared" on the Restreasy dashboard when the guests leave. This clears the order feed and resets the table for the next occupants.' },
+        { step: 'At end of day, use the Restreasy daily order export (CSV) to cross-reference with your billing system\'s revenue records. This provides a full audit trail of orders versus bills settled.' }
       ],
-      tips: ['Train your billing staff to reference DineFlow order IDs when handling disputed or unclear bills.', 'Consider placing a small printed instruction card at the billing counter for staff new to the flow.']
+      tips: ['Train your billing staff to reference Restreasy order IDs when handling disputed or unclear bills.', 'Consider placing a small printed instruction card at the billing counter for staff new to the flow.']
     }
   ];
 
@@ -134,7 +134,7 @@ export default function GuidesPage() {
         <div className="space-y-3">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Guides Directory</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            Our documentation team maintains detailed guides on every aspect of the DineFlow setup and operation process. Whether you are setting up for the first time or looking to optimize your existing menu for better ordering patterns, you'll find step-by-step instructions below.
+            Our documentation team maintains detailed guides on every aspect of the Restreasy setup and operation process. Whether you are setting up for the first time or looking to optimize your existing menu for better ordering patterns, you'll find step-by-step instructions below.
           </p>
         </div>
 

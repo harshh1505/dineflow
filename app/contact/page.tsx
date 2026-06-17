@@ -68,14 +68,14 @@ export default function ContactPage() {
     },
     {
       q: 'Can your team help me migrate my existing paper menu?',
-      a: 'Yes. Our onboarding team can manually format and upload your menu from a PDF or Word document into your DineFlow profile. This is a paid service (see our add-ons on the Pricing page). Submit an enquiry to get started.'
+      a: 'Yes. Our onboarding team can manually format and upload your menu from a PDF or Word document into your Restreasy profile. This is a paid service (see our add-ons on the Pricing page). Submit an enquiry to get started.'
     }
   ];
 
   return (
     <InfoLayout
       title="Contact & Support"
-      subtitle="Have questions about DineFlow, your account, or table setups? Reach us through the channels below."
+      subtitle="Have questions about Restreasy, your account, or table setups? Reach us through the channels below."
       category="Contact Channels"
       icon={Mail}
       accentColor="text-[#FF6B35] bg-[#FFF7F2] border-[#FF6B35]/20"
@@ -86,7 +86,7 @@ export default function ContactPage() {
         <div className="space-y-3">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">We're Here to Help</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            Whether you're exploring DineFlow for the first time, working through an onboarding setup, or running into a technical issue during a dinner service — our team is reachable through multiple channels. We aim to respond to all messages within 12 hours on business days.
+            Whether you're exploring Restreasy for the first time, working through an onboarding setup, or running into a technical issue during a dinner service — our team is reachable through multiple channels. We aim to respond to all messages within 12 hours on business days.
           </p>
         </div>
 

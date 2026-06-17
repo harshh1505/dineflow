@@ -129,7 +129,7 @@ export default async function LandingPage() {
                 <ForkSpoonDoodle className="w-4 h-4 text-white" />
               </div>
               <span className="font-extrabold text-lg tracking-tight text-[#111827]">
-                DineFlow
+                Restreasy
               </span>
             </div>
             <div className="flex items-center self-center pl-2 sm:pl-3 border-l border-[#EFEFEF]">
@@ -252,7 +252,7 @@ export default async function LandingPage() {
               </div>
             </div>
 
-            {/* Right Product Mockup Visuals (DineFlow inspired dashboard & phone mockup overlay) */}
+            {/* Right Product Mockup Visuals (Restreasy inspired dashboard & phone mockup overlay) */}
             <div className="lg:col-span-7 relative flex items-center justify-center pt-6 lg:pt-0">
               
               {/* Floating Chef Hat Doodle at top of dashboard */}
@@ -276,7 +276,7 @@ export default async function LandingPage() {
                     </div>
                     {/* Branding */}
                     <div className="flex items-center gap-1.5 text-[10px] font-bold text-[#111827] pl-3 border-l border-[#EFEFEF]">
-                      <ForkSpoonDoodle className="w-3.5 h-3.5 text-[#FF6B35]" /> DineFlow
+                      <ForkSpoonDoodle className="w-3.5 h-3.5 text-[#FF6B35]" /> Restreasy
                     </div>
                   </div>
 
@@ -802,7 +802,7 @@ export default async function LandingPage() {
                 </div>
                 
                 <p className="text-sm font-medium leading-relaxed text-[#111827] relative z-10 pr-4">
-                  "DineFlow completely transformed our ordering workflow. Customers scan the QR, add drinks, and submit instantly. The interface looks like a premium custom-built app. Wait times decreased by 15 minutes per table!"
+                  "Restreasy completely transformed our ordering workflow. Customers scan the QR, add drinks, and submit instantly. The interface looks like a premium custom-built app. Wait times decreased by 15 minutes per table!"
                 </p>
               </div>
               
@@ -867,7 +867,7 @@ export default async function LandingPage() {
                 <div>
                   <span className="text-[9px] font-extrabold text-[#6B7280] uppercase tracking-wider bg-[#FAFAFA] border border-[#EFEFEF] px-2.5 py-0.5 rounded-lg">Pro Fixed</span>
                   <div className="flex flex-col mt-4">
-                    <span className="text-3xl font-black text-[#111827]">₹1,000 + ₹25k</span>
+                    <span className="text-3xl font-black text-[#111827]">₹999 + ₹15k</span>
                     <span className="text-slate-500 text-[10px] font-semibold mt-1">per month + setup fee</span>
                   </div>
                   <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">Ideal for established cafes and dining rooms looking for flat pricing.</p>
@@ -895,8 +895,8 @@ export default async function LandingPage() {
                 <div>
                   <span className="text-[9px] font-extrabold text-[#FF6B35] uppercase tracking-wider bg-[#FFF7F2] px-2.5 py-0.5 rounded-lg">Partner Share</span>
                   <div className="flex flex-col mt-4">
-                    <span className="text-3xl font-black text-[#111827]">2% + ₹25k</span>
-                    <span className="text-slate-500 text-[10px] font-semibold mt-1">of monthly sales + setup fee</span>
+                    <span className="text-3xl font-black text-[#111827]">₹2,999 + ₹25k</span>
+                    <span className="text-slate-500 text-[10px] font-semibold mt-1">per month + setup fee</span>
                   </div>
                   <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">Comes with unlimited dining tables and almost all premium features included.</p>
                   <ul className="mt-8 space-y-3.5 text-xs text-[#111827] font-semibold">
@@ -922,8 +922,8 @@ export default async function LandingPage() {
                 <div>
                   <span className="text-[9px] font-extrabold text-indigo-600 uppercase tracking-wider bg-indigo-50 border border-indigo-100 px-2.5 py-0.5 rounded-lg">Enterprise Suite</span>
                   <div className="flex flex-col mt-4">
-                    <span className="text-3xl font-black text-[#111827]">₹2,000 + ₹25k</span>
-                    <span className="text-slate-500 text-[10px] font-semibold mt-1">per month + setup fee</span>
+                    <span className="text-3xl font-black text-[#111827]">Custom Pricing</span>
+                    <span className="text-slate-500 text-[10px] font-semibold mt-1">tailored to your scale</span>
                   </div>
                   <p className="text-[#6B7280] text-xs mt-3 leading-relaxed">All-inclusive platform for hotels, chains, and large food courts.</p>
                   <ul className="mt-8 space-y-3.5 text-xs text-[#111827] font-semibold">
@@ -961,7 +961,7 @@ export default async function LandingPage() {
                   <ForkSpoonDoodle className="w-4 h-4 text-white" />
                 </div>
                 <span className="font-extrabold text-base tracking-tight text-[#111827]">
-                  DineFlow
+                  Restreasy
                 </span>
               </div>
               <p className="text-[#6B7280] text-[11px] leading-relaxed max-w-[240px] font-medium">
@@ -1023,7 +1023,7 @@ export default async function LandingPage() {
           {/* Large Big Brand Name */}
           <div className="w-full text-center mt-20 pt-10 border-t border-[#EFEFEF] select-none">
             <div className="text-[10vw] font-black tracking-tighter text-[#111827] uppercase leading-none block">
-              {"DINEFLOW".split("").map((letter, index) => (
+              {"RESTREASY".split("").map((letter, index) => (
                 <span 
                   key={index} 
                   className="inline-block opacity-[0.06] hover:opacity-100 hover:text-[#FF6B35] transition-all duration-300 cursor-pointer"

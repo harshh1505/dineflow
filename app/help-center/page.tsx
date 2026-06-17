@@ -49,7 +49,7 @@ export default function HelpCenterPage() {
     {
       category: 'Ordering',
       q: 'Do customers need to pay through the menu interface?',
-      a: 'No. DineFlow is an ordering interface, not a payment gateway. Customers submit their order from their phone and you collect payment at your physical billing counter using your existing cash or card terminal. This keeps your payment flow unchanged while eliminating the pen-and-paper order step.'
+      a: 'No. Restreasy is an ordering interface, not a payment gateway. Customers submit their order from their phone and you collect payment at your physical billing counter using your existing cash or card terminal. This keeps your payment flow unchanged while eliminating the pen-and-paper order step.'
     },
     {
       category: 'Ordering',
@@ -74,12 +74,12 @@ export default function HelpCenterPage() {
     {
       category: 'Technical',
       q: 'What happens if my restaurant WiFi goes down?',
-      a: 'Since DineFlow is browser-based, customers load menus using their own cellular data (3G/4G/5G) — not your restaurant WiFi. However, your kitchen dashboard and order feed require an internet connection to receive new orders. We recommend keeping a backup mobile hotspot available during critical service hours.'
+      a: 'Since Restreasy is browser-based, customers load menus using their own cellular data (3G/4G/5G) — not your restaurant WiFi. However, your kitchen dashboard and order feed require an internet connection to receive new orders. We recommend keeping a backup mobile hotspot available during critical service hours.'
     },
     {
       category: 'Technical',
       q: 'Which browsers and phone models are supported?',
-      a: 'DineFlow is tested and certified on Chrome (Android), Safari (iOS), Firefox, and Samsung Internet. It works correctly on iPhones running iOS 14 or later, and Android devices running Android 9 or later. The menu is optimized for screens from 320px wide (compact phones) up to tablet widths.'
+      a: 'Restreasy is tested and certified on Chrome (Android), Safari (iOS), Firefox, and Samsung Internet. It works correctly on iPhones running iOS 14 or later, and Android devices running Android 9 or later. The menu is optimized for screens from 320px wide (compact phones) up to tablet widths.'
     },
     {
       category: 'Technical',
@@ -99,7 +99,7 @@ export default function HelpCenterPage() {
     {
       category: 'Billing',
       q: 'What is your refund policy?',
-      a: 'Monthly subscriptions are non-refundable once the billing cycle begins. Annual plan refunds are available within 14 days of the annual renewal date if you have not used the account during that period. Submit refund requests via email to billing@dineflow.in with your account details.'
+      a: 'Monthly subscriptions are non-refundable once the billing cycle begins. Annual plan refunds are available within 14 days of the annual renewal date if you have not used the account during that period. Submit refund requests via email to billing@restreasy.in with your account details.'
     }
   ];
 
@@ -112,7 +112,7 @@ export default function HelpCenterPage() {
   return (
     <InfoLayout
       title="Help Center"
-      subtitle="Find detailed answers to common questions about setting up, running, and growing with DineFlow."
+      subtitle="Find detailed answers to common questions about setting up, running, and growing with Restreasy."
       category="Help & Support"
       icon={HelpCircle}
       accentColor="text-[#FF6B35] bg-[#FFF7F2] border-[#FF6B35]/20"
@@ -123,7 +123,7 @@ export default function HelpCenterPage() {
         <div className="space-y-3">
           <h2 className="text-sm font-black text-slate-800 uppercase tracking-wider">Welcome to the Help Center</h2>
           <p className="text-slate-500 font-semibold text-xs leading-relaxed">
-            Whether you are setting up your restaurant for the first time or troubleshooting a specific issue during service, this page covers the most frequently asked questions from DineFlow merchants. Browse by category below or read through the full FAQ list.
+            Whether you are setting up your restaurant for the first time or troubleshooting a specific issue during service, this page covers the most frequently asked questions from Restreasy merchants. Browse by category below or read through the full FAQ list.
           </p>
         </div>
 
